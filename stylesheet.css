@@ -129,10 +129,36 @@ h2{
 .box{
     flex: 0 0 100%;
     border: 2px solid black;
+    position: relative;
 }
 .box.text{
     padding: 1rem;
 }
+.box.pic {
+    overflow: hidden;
+}
+.box.pic img{
+    transform: scale(1) translate(0,0);
+    transition: .25s all ease-out 0s;
+}
+.box.pic figcaption{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    max-width: calc(100% - 2rem);
+    background: black;
+    color: white;
+    padding: .5rem;
+    opacity: 0;
+    transition: .25s all ease-out 0s;
+}
+.box.pic:hover img{
+    transform: scale(1.2) translate(0,0);
+}
+.box.pic:hover figcaption{
+    opacity: 1;
+}
+
 .box ul{
     padding: 0 0 0 1.25rem;
 }

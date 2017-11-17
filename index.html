@@ -2,28 +2,34 @@
 <html>
 
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107726023-1"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109864300-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-            gtag('config', 'UA-107726023-1');
-        </script>
 
+            gtag('config', 'UA-109864300-1');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Hans Kristian Smedsrød - Mountain Ultra Trail Runner</title>
+        <title>Hans Kristian Smedsrød - Jeg løper i fjellet. </title>
         <meta name="Keywords" content="Terrengløping, Oslo, Stiløping, Trail running, Sky Blazers" />
 
         <meta property="og:site_name" content="Hans Kristian Smedsrød" />
         <meta property="og:title" content="Fjelljogger" />
-        <meta property="og:description" content="Jeg liker å jogge i fjellet" />
+        <meta property="og:description" content="Jeg løper i fjellet." />
         <meta property="og:image" content="media/headerPics/10.jpg">
         <meta property="og:url" content="http://hanskristiansmedsrod.no/">
 
         <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="./stylesheet.css" type="text/css">
 
+        <!-- 
+            Designet og kodet av Hans Kristian Smedsrød. 
+            Ingen CMS eller rammeverk. 
+            Statisk HTML, CSS og vanilje-JS.
+        -->
     </head>
 
     <body>
@@ -80,9 +86,14 @@
                     <li>2. dfsf </li>
                 </ul>
             </div>
-            <div class="box pic">
-                <img src="./media/pics/02.jpeg" />
-            </div>
+
+            <figure class="box pic">
+                <img src="./media/pics/02.jpeg" alt="Fra Glen Coe Skyline 2017">
+                <figcaption>
+                    Fra en fjellrygg i Glen Coe Skyline, Skottland, 2017. Foto: <a href="https://www.flickr.com/photos/mountain-zac/albums/with/72157689251622865">Zac Poulton</a>
+                </figcaption>
+            </figure>
+
 
             <div class="box text">
                 <h2>Race- og prosjekt-historikk</h2>
@@ -98,9 +109,12 @@
                 </ul>
             </div>
 
-            <div class="box pic">
-                <img src="./media/pics/01.JPG" />
-            </div>
+            <figure class="box pic">
+                <img src="./media/pics/01.JPG" alt="Fra toppen av Cerro Soray 5600moh, Peru, februar 2016">
+                <figcaption>
+                    Fra toppen av Cerro Soray 5600moh, Peru, februar 2016
+                </figcaption>
+            </figure>
 
             <div class="box text">
                 <h2>Kommende race og prosjekter</h2>
@@ -118,13 +132,15 @@
             <figure class="box pic">
                 <img src="./media/pics/04.JPG" alt="Hans Kristian Smedsrød på vei opp til Hamperokken">
                 <figcaption>
-                    På vei opp til Hamperokken under Tromsø Skyrace Hamperokken 207. Photo:
+                    På vei opp til Hamperokken under Tromsø Skyrace Hamperokken 207. Foto:
                     <a target="_blank" title="@martiskka på Instagram" href="https://www.instagram.com/martiskka/?hl=nb">@martiskka</a>.
                 </figcaption>
             </figure>
 
             <section id="medium-posts-container" data-fetch-success="false">
+                <!-- https://loading.io/spinner/wedges/-rotate-pie-preloader-gif -->
                 <img class="medium-loader" src="./media/loader.gif" />
+
                 <ul id="medium-post-list-container"></ul>
             </section>
 
