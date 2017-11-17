@@ -117,15 +117,12 @@
             </figure>
 
             <div class="box text">
-                <h2>Kommende race og prosjekter</h2>
+                <h2>Agenda</h2>
                 <ul>
-                    <li>Meritt 1</li>
-                    <li>Meritt 2</li>
-                    <li>Meritt 2</li>
-                    <li>Meritt 2</li>
-                    <li>Meritt 2</li>
-                    <li>Meritt 2</li>
-                    <li>Meritt 2</li>
+                    <li>Ultrafiord 100k, Punta Arenas, Chile, 4. april 2018</li>
+                    <li>VM Terrengultra, Penyagolosa, Spania, 4. mai 2018</li>
+                    <li>Tromsø Skyrace Hamperokken, Tromsø, Norge, 4. juli 2018</li>
+                    <li>VM Skyrunning, Glen Coe Skyline, Skottland, 4. oktober 2018 </li>
                 </ul>
             </div>
 
@@ -140,16 +137,19 @@
             <section id="medium-posts-container" data-fetch-success="false">
                 <!-- https://loading.io/spinner/wedges/-rotate-pie-preloader-gif -->
                 <img class="medium-loader" src="./media/loader.gif" />
-
+                <h2 id="medium-posts-title">Henter Medium-data..</h2>
                 <ul id="medium-post-list-container"></ul>
             </section>
 
         </main>
 
+        <script src="./moment.js" type="text/javascript"></script>
+        
         <script>
             var mediumPosts = {};
             var mediumPostsEl = document.getElementById('medium-posts-container');
-            var mediumPostListContainer = document.getElementById('medium-post-list-container');
+            var mediumPostsTitleEl = document.getElementById('medium-posts-title');
+            var mediumPostListContainerEl = document.getElementById('medium-post-list-container');
 
             var isTouchDevice = function () {
                 return (
@@ -179,27 +179,43 @@
                             if (mediumPosts.data.posts.hasOwnProperty(key)) {
                                 var postPath = mediumPosts.data.posts[key];
 
-                                //console.log(key, postPath);
+                                console.log(key, postPath);
 
                                 var titleEl = "",
+                                    subTitleEl = "",
+                                    publishedDateEl = "",
                                     thumbEl = "";
 
+                                var publishedDate = moment(postPath.firstPublishedAt).locale('nb').format('Do MMMM YYYY');
+                                
                                 if (postPath.title) {
-                                    titleEl = `<span>${postPath.title}</span>`;
+                                    titleEl = `<h3 class="medium-article-title">${postPath.title}</h3>`;
+                                }
+                                if (postPath.content.subtitle) {
+                                    subTitleEl = `<p class="medium-article-subtitle">${postPath.content.subtitle}</p>`;
                                 }
                                 if (postPath.virtuals.previewImage.imageId) {
-                                    thumbEl = `<img src="https://cdn-images-1.medium.com/fit/t/200/200/${postPath.virtuals.previewImage.imageId}">`;
+                                    thumbEl = `<img class="medium-article-thumb" src="https://cdn-images-1.medium.com/fit/t/200/200/${postPath.virtuals.previewImage.imageId}">`;
+                                }
+                                if (publishedDate) {
+                                    publishedDateEl = `<span class="medium-article-date">${publishedDate}</span>`;
                                 }
 
-                                mediumPostListContainer.innerHTML += `
+                                mediumPostsTitleEl.innerHTML = "Siste publikasjoner";
+                                mediumPostListContainerEl.innerHTML += `
                                     <li>
                                         <a href="https://medium.com/@hanserino/${postPath.uniqueSlug}">
-                                            ${thumbEl}
-                                            ${titleEl}
+                                            <div>
+                                                ${publishedDateEl}
+                                                ${thumbEl}
+                                            </div>
+                                            <div>
+                                                ${titleEl}
+                                                ${subTitleEl}
+                                            </div>
                                         </a>
                                     </li>
                                 `;
-
                             }
                         }
 

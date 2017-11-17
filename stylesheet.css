@@ -132,19 +132,24 @@ h2{
     position: relative;
 }
 .box.text{
-    padding: 1rem;
+    padding: .5rem;
 }
 .box.pic {
     overflow: hidden;
 }
 .box.pic img{
     transform: scale(1) translate(0,0);
-    transition: .25s all ease-out 0s;
+    transition: 1s all ease-out 0s;
 }
+.box.pic:hover img{
+    transform: scale(1.2) translate(0,0);
+    transition: 3s all ease-in-out 0s;
+}
+
 .box.pic figcaption{
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .5rem;
+    right: .5rem;
     max-width: calc(100% - 2rem);
     background: black;
     color: white;
@@ -152,9 +157,7 @@ h2{
     opacity: 0;
     transition: .25s all ease-out 0s;
 }
-.box.pic:hover img{
-    transform: scale(1.2) translate(0,0);
-}
+
 .box.pic:hover figcaption{
     opacity: 1;
 }
@@ -163,12 +166,63 @@ h2{
     padding: 0 0 0 1.25rem;
 }
 
-
 #medium-posts-container{
     position: relative;
+    padding: 1rem .5rem;
 }
+
 #medium-posts-container[data-fetch-success="false"]{
     height: 500px;
+}
+
+#medium-post-list-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#medium-post-list-container li{
+    margin: 0 0 .5rem 0;
+}
+#medium-post-list-container a{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#medium-post-list-container a > div{
+    position: relative;
+}
+#medium-post-list-container a > div:first-child{
+    flex: 0 0 25%;
+    margin-right: .5rem;
+}
+#medium-post-list-container a:hover {
+    text-decoration: underline;
+}
+.medium-article-date{
+    position: absolute;
+    left: .15rem;
+    top: .15rem;
+    font-style: italic;
+    background: black;
+    color: white;
+    padding: .15rem;
+    font-size: .5rem;
+}
+.medium-article-thumb{
+    width: 100%;
+    height: auto;
+}
+#medium-post-list-container a:hover .medium-article-subtitle {
+    font-style: italic;
+}
+.medium-article-title{
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+.medium-article-subtitle{
+    font-size: .75rem;
+    margin: .25rem 0 0 0;
 }
 
 .medium-loader{
@@ -182,7 +236,8 @@ h2{
     display: none;
 }
 
-@media (min-width: 900px){
+
+@media (min-width: 650px){
     html{
         font-size: 140%;
     }
@@ -192,6 +247,10 @@ h2{
     .header__title{
         top: 2rem;
         left: 2rem;
+    }
+    #medium-posts-container{
+        flex: 0 0 100%;
+        padding: 2rem;
     }
     .box{
         flex: 0 0 50%;
@@ -205,7 +264,8 @@ h2{
         height: 100%;
         object-fit: cover;
     }
-    .box:nth-of-type(3){order: 4;}
-    .box:nth-of-type(3){order: 4;}
+
+    /*.box:nth-of-type(3){order: 4;}
+    .box:nth-of-type(3){order: 4;}*/
 
 }
