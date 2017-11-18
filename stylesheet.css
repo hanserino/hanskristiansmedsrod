@@ -38,10 +38,17 @@ img{
     clip: rect(0 0 0 0); 
     height: 1px; width: 1px; 
     margin: -1px; padding: 0; border: 0; 
-  }
+}
+
+@media (max-width: 650px){
+    .mobile-hidden{
+        display: none;
+    }
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
 h1, h2 {
     font-family: 'Bangers', cursive;    
 }
@@ -234,7 +241,6 @@ h2{
 [data-fetch-success="true"] .medium-loader{
     display: none;
 }
-
 
 @media (min-width: 650px){
     html{

@@ -40,7 +40,7 @@
                 <span>Jeg heter Hans Kristian Smedsrød. </span>
                 <span>Jeg løper i fjellet.</span>
             </h1>
-            <video class="header__video" preload="true" autoplay loop>
+            <video class="header__video" preload="true" autoplay loop muted playsinline poster="./media/pics/04.JPG">
                 <source src="./media/videos/header-converted.webm" type='video/webm;codecs="vp8, vorbis"' />
                 <source src="./media/videos/header-converted.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
             </video>
@@ -89,14 +89,17 @@
                     bilder, filmer og programmerer. </p>
             </div>
 
-            <figure class="box pic">
-                <img src="./media/pics/02.jpeg" alt="Fra Glen Coe Skyline 2017">
-                <figcaption>
-                    Fra en fjellrygg i Glen Coe Skyline, Skottland, 2017. Foto:
+            <figure class="box pic mobile-hidden">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="./media/pics/02.jpeg" alt="Fra Glen Coe Skyline 2017">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" aria-hidden="true" />
+                    </picture>
+                    <figcaption>
+                        Fra en fjellrygg i Glen Coe Skyline, Skottland, 2017. Foto:
                     <a href="https://www.flickr.com/photos/mountain-zac/albums/with/72157689251622865">Zac Poulton</a>
-                </figcaption>
-            </figure>
-
+                    </figcaption>
+                </figure>
+            
 
             <div class="box text">
                 <h2>Race- og prosjekt-historikk</h2>
@@ -113,8 +116,11 @@
                 </table>
             </div>
 
-            <figure class="box pic">
-                <img src="./media/pics/01.JPG" alt="Fra toppen av Cerro Soray 5600moh, Peru, februar 2016">
+            <figure class="box pic mobile-hidden">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./media/pics/01.JPG">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" aria-hidden="true" />
+                </picture>
                 <figcaption>
                     Fra toppen av Cerro Soray 5600moh, Peru, februar 2016
                 </figcaption>
@@ -140,8 +146,11 @@
 
             </div>
 
-            <figure class="box pic">
-                <img src="./media/pics/04.JPG" alt="Hans Kristian Smedsrød på vei opp til Hamperokken">
+            <figure class="box pic mobile-hidden">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./media/pics/02.jpeg">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" aria-hidden="true" />
+                </picture>
                 <figcaption>
                     På vei opp til Hamperokken under Tromsø Skyrace Hamperokken 207. Foto:
                     <a target="_blank" title="@martiskka på Instagram" href="https://www.instagram.com/martiskka/?hl=nb">@martiskka</a>.
