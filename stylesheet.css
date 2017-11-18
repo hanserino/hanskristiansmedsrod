@@ -188,6 +188,7 @@ h2{
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
+    color: inherit;
 }
 #medium-post-list-container a > div{
     position: relative;
@@ -196,7 +197,7 @@ h2{
     flex: 0 0 25%;
     margin-right: .5rem;
 }
-#medium-post-list-container a:hover {
+#medium-post-list-container a:hover .medium-article-title{
     text-decoration: underline;
 }
 .medium-article-date{
@@ -213,9 +214,7 @@ h2{
     width: 100%;
     height: auto;
 }
-#medium-post-list-container a:hover .medium-article-subtitle {
-    font-style: italic;
-}
+
 .medium-article-title{
     font-weight: bold;
     font-size: 1.15rem;
