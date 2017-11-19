@@ -20,14 +20,8 @@
     {
         "date": "22.04.2017",
         "category": "Race",
-        "location": "Tromsø, Norge",
-        "description": "1. plass KRS Ultra"
-    },
-    {
-        "date": "22.04.2017",
-        "category": "Race",
         "location": "Kristiansand, Norge",
-        "description": "1. plass KRS Ultra"
+        "description": "1. plass KRS Ultra 60km"
     },
     {
         "date": "03.06.2017",
@@ -48,9 +42,21 @@
         "description": "12. plass Glen Coe Skyline"
     },
     {
+        "date": "14.10.2017",
+        "category": "Race",
+        "location": "Nordmarka, Oslo, Norge",
+        "description": "5. plass Ivar Formos Minneløp 17km"
+    },
+    {
+        "date": "05.11.2017",
+        "category": "Race",
+        "location": "Loja, Spania",
+        "description": "2. plass Abades Stone Race 43km"
+    },
+    {
         "date": "15.10.2017",
-        "category": "",
-        "location": "8. plass Skyrunning Extreme Series 2017 sammenlagt",
-        "description": ""
+        "category": "Sammendrag",
+        "location": "",
+        "description": "8. plass Skyrunning Extreme Series 2017 sammenlagt"
     }
 ]

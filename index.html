@@ -85,31 +85,30 @@
                 <h2>Elevator pitch</h2>
                 <p>Mitt navn er Hans. Jeg liker å løpe langt i fjell og terreng. De to siste årene har jeg konkurrert i Skyrunning-serien,
                     men også gjort noen andre kortere og lengre
-                    <a href="#">race og ekspedisjoner</a>. I tillegg elsker jeg historiefortelling – uansett medium. Jeg skriver, tar
-                    bilder, filmer og programmerer. </p>
+                    <a href="#">race og ekspedisjoner</a>. Samtidig brenner jeg for historiefortelling – uavhengig av medium. Jeg skriver,
+                    tar bilder, filmer og programmerer fra "the great outdoors". </p>
             </div>
 
             <figure class="box pic mobile-hidden">
-                    <picture>
-                        <source media="(min-width: 650px)" srcset="./media/pics/02.jpeg" alt="Fra Glen Coe Skyline 2017">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" aria-hidden="true" />
-                    </picture>
-                    <figcaption>
-                        Fra en fjellrygg i Glen Coe Skyline, Skottland, 2017. Foto:
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./media/pics/02.jpeg" alt="Fra Glen Coe Skyline 2017">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" aria-hidden="true" />
+                </picture>
+                <figcaption>
+                    Fra en fjellrygg i Glen Coe Skyline, Skottland, 2017. Foto:
                     <a href="https://www.flickr.com/photos/mountain-zac/albums/with/72157689251622865">Zac Poulton</a>
-                    </figcaption>
-                </figure>
-            
+                </figcaption>
+            </figure>
 
-            <div class="box text">
+
+            <div class="box text full">
                 <h2>Race- og prosjekt-historikk</h2>
-                <table id="history-table">
+                <table id="history-table" data-fetch-success="false">
                     <thead>
                         <tr>
-                            <th>Når</th>
-                            <th>Kategori</th>
+                            <th>Dato</th>
                             <th>Hva</th>
-                            <th>Hvor</th>
+                            <th>Kategori</th>
                         </tr>
                     </thead>
                     <tbody id="history-table-body"></tbody>
@@ -126,15 +125,14 @@
                 </figcaption>
             </figure>
 
-            <div class="box text">
+            <div class="box text full">
                 <h2>Agenda</h2>
-                <table id="agenda-table">
+                <table id="agenda-table" data-fetch-success="false">
                     <thead>
                         <tr>
-                            <th>Når</th>
-                            <th>Kategori</th>
+                            <th>Dato</th>
                             <th>Hva</th>
-                            <th>Hvor</th>
+                            <th>Kategori</th>
                         </tr>
                     </thead>
                     <tbody id="agenda-table-body"></tbody>
@@ -143,7 +141,20 @@
 
             <div class="box text">
                 <h2>Sponsorer</h2>
+                <ul class="spons-list">
+                    <li class="spons-list-item">
+                        <a class="spons-logo" href="https://thejuice.no/" target="_blank">
+                            <img src="./media/thejuice_logo.svg" alt="The JUICE Logo" />
+                        </a>
 
+                        <p class="spons-promo">JUICE forener aktivitet og mote og fører kvalitet-brands som The North Face, Gore,
+                            Descente, Patagonia, Ciele og Falke. De skjønner at kun det beste er bra nok når man
+                            skal løpe langt og lenge i harde vinternetter, så alt du finner i sjappa er 100% high end.</p>
+                        <p class="spons-external">Sjekk de ut på
+                            <a href="https://thejuice.no/" target="_blank">https://thejuice.no/</a> eller besøk de på Egertorget i Oslo. 
+                        </p>
+                    </li>
+                </ul>
             </div>
 
             <figure class="box pic mobile-hidden">
@@ -158,13 +169,14 @@
             </figure>
 
             <section id="medium-posts-container" data-fetch-success="false">
-                <!-- https://loading.io/spinner/wedges/-rotate-pie-preloader-gif -->
-                <img class="medium-loader" src="./media/loader.gif" />
                 <h2 id="medium-posts-title">Henter Medium-data..</h2>
                 <ul id="medium-post-list-container"></ul>
             </section>
 
         </main>
+        <footer>
+            <p>Progget, designet og utviklet av undertegnede</p>
+        </footer>
 
         <script src="./moment.js" type="text/javascript"></script>
 
@@ -199,33 +211,33 @@
                 fetch('./data/history.json').then(function (response) {
                     return response.json().then(function (data) {
                         historyData = data.reverse();
+                        historyTableEl.dataset.fetchSuccess = true;
 
                         for (var i = 0; i < historyData.length; i++) {
                             historyTableBodyEl.innerHTML += `
                                 <tr>
                                     <td>${historyData[i].date}</td>
-                                    <td>${historyData[i].category}</td>
-                                    <td>${historyData[i].location}</td>
                                     <td>${historyData[i].description}</td>
+                                    <td>${historyData[i].category}</td>
                                 </tr>
                             `;
                         }
                     });
                 }).catch(error => {
-                    console.log(error);
+                    console.log(error);;
                 });
 
                 fetch('./data/agenda.json').then(function (response) {
                     return response.json().then(function (data) {
                         agendaData = data.reverse();
+                        agendaTableEl.dataset.fetchSuccess = true;
 
                         for (var i = 0; i < agendaData.length; i++) {
                             agendaTableBodyEl.innerHTML += `
                                 <tr>
                                     <td>${agendaData[i].date}</td>
-                                    <td>${agendaData[i].category}</td>
-                                    <td>${agendaData[i].location}</td>
                                     <td>${agendaData[i].description}</td>
+                                    <td>${agendaData[i].category}</td>
                                 </tr>
                             `;
                         }

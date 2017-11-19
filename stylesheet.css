@@ -138,6 +138,11 @@ h2{
     border: 2px solid black;
     position: relative;
 }
+
+.box.full{
+
+}
+
 .box.text{
     padding: .5rem;
 }
@@ -176,10 +181,6 @@ h2{
 #medium-posts-container{
     position: relative;
     padding: 1rem .5rem;
-}
-
-#medium-posts-container[data-fetch-success="false"]{
-    height: 500px;
 }
 
 #medium-post-list-container {
@@ -231,15 +232,52 @@ h2{
     margin: .25rem 0 0 0;
 }
 
-.medium-loader{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+[data-fetch-success="false"] {
+    min-height: 500px;
+    background: url('./media/loader.gif') no-repeat center center;
 }
 
-[data-fetch-success="true"] .medium-loader{
-    display: none;
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: .25rem .4rem;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table thead th{
+    position: sticky;
+    top: 0;
+}
+table th {
+    text-align: left;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+
+ul.spons-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.spons-logo{
+    float: left;
+    margin: .25rem 1rem 0 0;
+}
+
+.spons-list-item{
+    
+}
+.spons-logo{
+    
 }
 
 @media (min-width: 650px){
@@ -261,6 +299,11 @@ h2{
         flex: 0 0 50%;
         border-width: 2px;
     }
+
+    .box.full{
+        flex: 0 0 100%;
+    }
+    
     .box.text{
         padding: 2rem;
     }
