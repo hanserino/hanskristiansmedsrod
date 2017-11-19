@@ -48,15 +48,15 @@
         "description": "5. plass Ivar Formos Minneløp 17km"
     },
     {
-        "date": "05.11.2017",
-        "category": "Race",
-        "location": "Loja, Spania",
-        "description": "2. plass Abades Stone Race 43km"
-    },
-    {
         "date": "15.10.2017",
         "category": "Sammendrag",
         "location": "",
         "description": "8. plass Skyrunning Extreme Series 2017 sammenlagt"
+    },
+    {
+        "date": "05.11.2017",
+        "category": "Race",
+        "location": "Loja, Spania",
+        "description": "2. plass Abades Stone Race 43km"
     }
 ]

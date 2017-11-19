@@ -63,9 +63,10 @@ h2{
     width: 100vw;
     height: 100vh;
     position: relative;
-    border: 4px solid black;
-    border-bottom-width: 2px;
+    border: 0px solid black;
+    border-width: 0 0 2px 0;
 }
+
 .header::before{
     content: "";
     position: absolute;
@@ -79,6 +80,17 @@ h2{
     background: black;
     transition: 1s opacity linear 2.5s;
 }
+.header::after{
+    content: "";
+    bottom: -2px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 3;
+    background: black;
+}
+
 .loaded .header::before{
     opacity: .05;
 }
@@ -110,12 +122,13 @@ h2{
 .header__socials a{
     color: white;
     text-decoration: none;
+    display: block;
     padding: 1rem;
-}    
+} 
 
 .header__title > span{
     opacity: 0;
-    transition: .25s all linear 0s;
+    transition: .25s opacity linear 0s;
 }
 .loaded .header__title > span{
     opacity: 1;
@@ -132,10 +145,13 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 .box{
     flex: 0 0 100%;
-    border: 2px solid black;
+    border: 0px solid black;
+    border-width: 2px 0;
     position: relative;
 }
 
@@ -144,8 +160,24 @@ h2{
 }
 
 .box.text{
-    padding: .5rem;
+    padding: 1rem .5rem;
 }
+.box.text p{
+    margin: 1rem 0;
+}
+.box.text p:first-child{
+    margin-top: 0;
+}
+
+.box.text p a{
+    color: inherit;
+}
+
+.box.text p a:hover{
+    background: black;
+    color: white;
+}
+
 .box.pic {
     overflow: hidden;
 }
@@ -169,6 +201,13 @@ h2{
     opacity: 0;
     transition: .25s all ease-out 0s;
 }
+.box.pic figcaption a{
+    color: inherit;
+}
+.box.pic figcaption a:hover{
+    background: white;
+    color: black;
+}
 
 .box.pic:hover figcaption{
     opacity: 1;
@@ -181,6 +220,7 @@ h2{
 #medium-posts-container{
     position: relative;
     padding: 1rem .5rem;
+    border: 2px solid black;
 }
 
 #medium-post-list-container {
@@ -188,6 +228,7 @@ h2{
     padding: 0;
     margin: 0;
 }
+
 #medium-post-list-container li{
     margin: 0 0 .5rem 0;
 }
@@ -262,23 +303,70 @@ table th {
     font-weight: bold;
 }
 
-
 ul.spons-list{
     padding: 0;
     margin: 0;
     list-style: none;
 }
+.spons-list-item{
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.spons-list-item:first-child{
+    border: none;
+    padding-top: 0;
+}
+
 .spons-logo{
     float: left;
     margin: .25rem 1rem 0 0;
 }
 
-.spons-list-item{
-    
+.spons-list-item.blank .spons-logo{
+    border: 2px dashed rgba(0,0,0,.3);
+    background: rgba(0,0,0,.1);
+    text-align: center;
+    width: 200px;
+    height: auto;
+    padding: 1rem;
+    color: black;
 }
+.spons-list-item.blank .spons-promo {
+    margin-top: 0
+}
+
+.spons-list-item p a{
+    color: inherit;
+}
+
+.spons-external{
+    margin: 1rem 0 0 0;
+}
+
+
+
 .spons-logo{
     
 }
+
+footer{
+    background: black;
+    text-align: center;
+    color: rgba(255,255,255,.75);
+    padding: .5rem;
+    font-size: .75rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: white;
+}
+
 
 @media (min-width: 650px){
     html{
@@ -286,15 +374,25 @@ ul.spons-list{
     }
     .main{
         flex-direction: row;
+        border: 2px solid black;
     }
     .header__title{
         top: 2rem;
         left: 2rem;
     }
+
     #medium-posts-container{
         flex: 0 0 100%;
         padding: 2rem;
     }
+    #medium-post-list-container a > div:first-child{
+        margin-right: 1.5rem;
+    }
+
+    #medium-post-list-container li{
+        margin-bottom: 1rem;
+    }
+
     .box{
         flex: 0 0 50%;
         border-width: 2px;
