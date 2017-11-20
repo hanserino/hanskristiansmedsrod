@@ -3,16 +3,18 @@
         "date": "13.05.2018",
         "category": "Race",
         "location": "Penyagolosa, Spania",
-        "description": "IAU World Trail Championchips 2018"
+        "description": "IAU World Trail Championchips 2018",
+        "url": "https://www.kondis.no/7-loepere-tatt-ut-til-vm-terrengultra-2018.6055378-127695.html"
     },
     {
         "date": "Hver tirsdag hele året",
         "category": "Trening",
         "location": "Disen Trikkestopp",
-        "description": "Stirsdag"
+        "description": "Stirsdag",
+        "url": "http://stirsdag.no/"
     },
     {
-        "date": "15.07.2018",
+        "date": "01.07.2018",
         "category": "Ekspedisjon / FKT",
         "location": "Oslo - Jotunheimen",
         "description": "Assistere Johannes Rummelhoff langs Jotunheimstien FKT"
@@ -21,6 +23,7 @@
         "date": "15.09.2018",
         "category": "Race",
         "location": "Kinlochleven, Skottland",
-        "description": "Skyrunning World Championchips 2018"
+        "description": "Skyrunning World Championchips 2018",
+        "url": "http://www.skyrunning.com/scotland-host-2018-skyrunning-world-championships/"
     }
 ]

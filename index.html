@@ -40,9 +40,9 @@
                 <span>Jeg heter Hans Kristian Smedsrød. </span>
                 <span>Jeg løper i fjellet.</span>
             </h1>
-            <video class="header__video" preload="true" autoplay loop muted playsinline poster="./media/pics/06.jpg">
-                <source src="./media/videos/header-converted.webm" type='video/webm;codecs="vp8, vorbis"' />
-                <source src="./media/videos/header-converted.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+            <video class="header__video" autoplay loop muted playsinline poster="./media/pics/06.jpg">
+                <source src="./media/videos/header-compressed.webm" type='video/webm;codecs="vp8, vorbis"' />
+                <source src="./media/videos/header-compressed.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
             </video>
 
             <aside class="header__socials">
@@ -275,11 +275,18 @@
                         agendaData = data;
                         agendaTableEl.dataset.fetchSuccess = true;
 
+                        var descriptionEl =  "";
+
                         for (var i = 0; i < agendaData.length; i++) {
+                            if(agendaData[i].url) {
+                                descriptionEl = `<td><a href="${agendaData[i].url}">${agendaData[i].description}</a></td>`;
+                            }else{
+                                descriptionEl = `<td>${agendaData[i].description}</td>`;
+                            }
                             agendaTableBodyEl.innerHTML += `
                                 <tr>
                                     <td>${agendaData[i].date}</td>
-                                    <td>${agendaData[i].description}</td>
+                                    ${descriptionEl}
                                     <td>${agendaData[i].category}</td>
                                 </tr>
                             `;

@@ -53,12 +53,14 @@ h1, h2 {
     font-family: 'Bangers', cursive;    
 }
 h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
+
 h2{
     font-size: 3rem;
     margin: 0 0 .75rem 0;
 }
+
 .header{
     width: 100vw;
     height: 100vh;
@@ -94,13 +96,17 @@ h2{
 .loaded .header::before{
     opacity: .05;
 }
+
 .header__title{
     position: absolute;
     z-index: 2;
     color: white;
-    top: 1rem;
-    left: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
 }
+
 .header__socials{
     position: absolute;
     z-index: 2;
@@ -283,6 +289,10 @@ table{
     width: 100%;
 }
 
+table tr a{
+    color: inherit;
+}
+
 table td, table th {
     border: 1px solid #ddd;
     padding: .25rem .4rem;
@@ -377,8 +387,7 @@ footer a:hover {
         border: 2px solid black;
     }
     .header__title{
-        top: 2rem;
-        left: 2rem;
+        padding: 2rem;
     }
 
     #medium-posts-container{
