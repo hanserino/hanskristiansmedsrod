@@ -2,28 +2,34 @@
     {
         "date": "13.05.2018",
         "category": "Race",
-        "location": "Penyagolosa, Spania",
-        "description": "IAU World Trail Championchips 2018",
+        "description": "IAU World Trail Championchips 2018, Penyagolosa, Spania",
         "url": "https://www.kondis.no/7-loepere-tatt-ut-til-vm-terrengultra-2018.6055378-127695.html"
     },
     {
         "date": "Hver tirsdag hele året",
         "category": "Trening",
-        "location": "Disen Trikkestopp",
-        "description": "Stirsdag",
+        "description": "Stirsdag - Ukentlig fellestrening til Sky Blazers",
         "url": "http://stirsdag.no/"
     },
     {
-        "date": "01.07.2018",
+        "date": "Sommeren 2018",
+        "category": "FKT-forsøk",
+        "location": "Kvaløya, Tromsø, Norge",
+        "description": "Rekordforsøk over Ersfjordtraversen. Foreløpig rekordholder er Kilian Jornet på 4:49'30",
+        "url": "http://kugo.no/2014/08/ersfjordtraversen/"
+    },
+    {
+        "date": "Sommeren 2018",
         "category": "Ekspedisjon / FKT",
         "location": "Oslo - Jotunheimen",
-        "description": "Assistere Johannes Rummelhoff langs Jotunheimstien FKT"
+        "description": "Assistere Johannes Rummelhoff langs Jotunheimstien FKT",
+        "url": "https://no.wikipedia.org/wiki/Jotunheimstien"
     },
     {
         "date": "15.09.2018",
         "category": "Race",
         "location": "Kinlochleven, Skottland",
-        "description": "Skyrunning World Championchips 2018",
+        "description": "Skyrunning World Championchips 2018, Glen Coe Skyline, Skottland",
         "url": "http://www.skyrunning.com/scotland-host-2018-skyrunning-world-championships/"
     }
 ]
