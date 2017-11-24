@@ -1,6 +1,7 @@
 var mediumPosts = {};
 var historyData = {};
 var agendaData = {};
+var stravaData = {};
 
 var historyTableEl = document.getElementById("history-table");
 var historyTableBodyEl = document.getElementById("history-table-body");
@@ -11,6 +12,10 @@ var agendaTableBodyEl = document.getElementById("agenda-table-body");
 var mediumPostsEl = document.getElementById('medium-posts-container');
 var mediumPostsTitleEl = document.getElementById('medium-posts-title');
 var mediumPostListContainerEl = document.getElementById('medium-post-list-container');
+
+var stravaStatsEl = document.getElementById('strava-stats-container');
+var stravaStatsTitleEl = document.getElementById('strava-stats-title');
+var stravaStatsListEl = document.getElementById('strava-stats-list');
 
 var isTouchDevice = function () {
     return (
@@ -23,6 +28,14 @@ var isTouchDevice = function () {
             (navigator.maxTouchPoints || navigator.msMaxTouchPoints))
     );
 };
+
+function descriptionListHelper(dt, dd){
+    if(dt && dt){
+        return `<dt>${dt}:</dt><dd>${dd}</dd>`;
+    }else{
+        return empty;
+    }
+}
 
 function init() {
     fetch('./data/history.json').then(function (response) {
@@ -69,6 +82,28 @@ function init() {
     }).catch(error => {
         console.log(error);
     });
+
+    fetch('https://www.strava.com/api/v3/athletes/10448277/stats/?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb').then(function (response) {
+        return response.json().then(function (data) {
+            stravaData = data;
+
+            if(stravaData.ytd_run_totals){
+                stravaStatsEl.dataset.fetchSuccess = true;
+                stravaStatsTitleEl.innerHTML = "Stats fra Strava";
+                
+                stravaStatsListEl.innerHTML += descriptionListHelper("Løpeturer", stravaData.ytd_run_totals.count);
+                stravaStatsListEl.innerHTML += descriptionListHelper("Distanse", stravaData.ytd_run_totals.distance);
+                stravaStatsListEl.innerHTML += descriptionListHelper("Tid på beina", stravaData.ytd_run_totals.moving_time);
+                stravaStatsListEl.innerHTML += descriptionListHelper("Høydemeter", stravaData.ytd_run_totals.elevation_gain);
+
+            }
+
+        });
+    }).catch(error => {
+        console.log(error);
+        stravaStatsEl.innerHTML = "";
+    });
+
 
     fetch("https://exec.clay.run/nicoslepicos/medium-get-user-posts-new?profile=hanserino", {
         headers: {

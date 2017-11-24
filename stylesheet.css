@@ -400,6 +400,31 @@ footer a:hover {
     height: 100%; 
 }
 
+dl{
+    display: flex;   
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+dt {
+    padding: 2px 0;
+    flex: 0 0 35%;
+    overflow: hidden; 
+}
+
+dd {
+    padding: 2px 0 20px 0;
+    margin-left: 0;
+    flex: 65% 0 0;
+    padding-left: 20px;
+    max-width: 65%;
+}
+
+dd + dd {
+    margin-left: 35%;
+}
+  
 
 @media (min-width: 650px){
     html{
