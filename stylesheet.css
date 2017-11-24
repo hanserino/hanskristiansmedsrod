@@ -188,6 +188,7 @@ h2{
     overflow: hidden;
 }
 .box.pic img{
+    display: block;
     transform: scale(1) translate(0,0);
     transition: 1s all ease-out 0s;
 }
@@ -216,6 +217,10 @@ h2{
 }
 
 .box.pic:hover figcaption{
+    opacity: 1;
+}
+
+.touch.pic figcaption{
     opacity: 1;
 }
 
