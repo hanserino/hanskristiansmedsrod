@@ -14,8 +14,8 @@ var today = new Date();
 var year = today.getFullYear();
 
 var endOfYear = new Date(year, 11, 31)
-var oneDay = 1000*60*60*24
-var remainingDays = Math.ceil((endOfYear.getTime()-today.getTime())/(oneDay));
+var oneDay = 1000 * 60 * 60 * 24
+var remainingDays = Math.ceil((endOfYear.getTime() - today.getTime()) / (oneDay));
 
 var historyTableEl = document.getElementById("history-table");
 var historyTableBodyEl = document.getElementById("history-table-body");
@@ -111,7 +111,12 @@ function init() {
         console.log(error);
     });
 
-    fetch('https://www.strava.com/api/v3/athletes/10448277/stats/?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb').then(function (response) {
+    fetch("https://www.strava.com/api/v3/athletes/10448277/stats?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb", {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    }).then(function (response) {
         return response.json().then(function (data) {
             if (data.ytd_run_totals) {
 
@@ -152,7 +157,7 @@ function init() {
                 }
 
             }
-            else{
+            else {
                 console.log('no running stats');
             }
 
