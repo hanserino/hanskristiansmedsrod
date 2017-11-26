@@ -124,16 +124,21 @@ function init() {
                 console.log(stravaData);
 
                 stravaStatsEl.dataset.fetchSuccess = true;
-                stravaStatsTitleEl.innerHTML = `Løpe-stats fra Strava`;
+                stravaStatsTitleEl.innerHTML = `Funfacts fra Strava`;
 
                 //Distance - meters
                 if (stravaData.distance) {
-                    var formattedDistance = kilometerFormatter(stravaData.distance, true);
-                    var earthComparison = Math.round(funFacts.earthDiameter_km / kilometerFormatter(stravaData.distance, false) * 10) / 10;
+                    var formattedDistance = kilometerFormatter(stravaData.distance, false);
+
+                    var earthComparison = kilometerFormatter(stravaData.distance, false) / funFacts.earthDiameter_km;
+                    var earthComparisonPercentage = Math.round(earthComparison*10);
+                    var earthComparisonFractionString = `<sup>1</sup>&frasl;<sub>${earthComparisonPercentage}</sub> `;                                            
+
+                    console.log('earth: ', funFacts.earthDiameter_km,  'hk: ', formattedDistance);
 
                     stravaTextEl.innerHTML += `
                     <p>
-                        Hittil i ${year} har jeg løpt <em>${formattedDistance} <abbr title="kilometer">km</abbr></em>, noe somilsvarer å ha løpt jorda rundt <em>${earthComparison}</em> ganger.
+                        Hittil i ${year} har jeg løpt <em>${formattedDistance} <abbr title="kilometer">km</abbr></em>, noe som tilsvarer ca. <em>${earthComparisonFractionString}</em> av jordas omkrets.
                     </p>
                     `;
                 }
@@ -147,8 +152,8 @@ function init() {
                     stravaTextEl.innerHTML += `
                     <p>
                        Dette har jeg brukt <em>${formattedTime} timer</em> på. 
-                       Det er kanskje ikke kjempeimponerende, men det er tross alt fordelt på <em>${stravaData.elevation_gain} akkumulerte høydemetere</em>. 
-                       Det vil si at jeg har besteget <em>Mount Everest ${everestComparison} ganger</em> fra havnivå på denne strekningen.
+                       Det er kanskje ikke kjempe-imponerende, men det er tross alt fordelt på <em>${stravaData.elevation_gain} akkumulerte høydemetere</em>. 
+                       Det vil si at jeg har besteget <em>Mount Everest ${everestComparison} ganger</em> fra havnivå.
                     </p>
                     <p>
                         Det er ${remainingDays} dager igjen av året, så det er god tid til å pynte på årets statistikk.
