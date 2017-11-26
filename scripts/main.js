@@ -151,7 +151,7 @@ function init() {
                        Det vil si at jeg har besteget <em>Mount Everest ${everestComparison} ganger</em> fra havnivå på denne strekningen.
                     </p>
                     <p>
-                        Det er fortsatt ${remainingDays} dager igjen av året, så det er fortsatt god tid til å pynte på årets statistikk.
+                        Det er ${remainingDays} dager igjen av året, så det er god tid til å pynte på årets statistikk.
                     </p>
                     `;
                 }
