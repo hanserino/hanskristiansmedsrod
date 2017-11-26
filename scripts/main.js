@@ -111,7 +111,7 @@ function init() {
         console.log(error);
     });
 
-    fetch("https://www.strava.com/api/v3/athletes/10448277/stats/?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb", {
+    fetch("https://www.strava.com/api/v3/athletes/10448277/stats?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb", {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
