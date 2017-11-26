@@ -184,6 +184,11 @@ h2{
     color: white;
 }
 
+.box.text em{
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .box.pic {
     overflow: hidden;
 }

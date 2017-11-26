@@ -3,6 +3,20 @@ var historyData = {};
 var agendaData = {};
 var stravaData = {};
 
+var funFacts = {
+    earthDiameter_km: 12742,
+    distanceToMoon_km: 384400,
+    nordkappLindesnes_km: 2377,
+    everestHeight_m: 8848
+}
+
+var today = new Date();
+var year = today.getFullYear();
+
+var endOfYear = new Date(year, 11, 31)
+var oneDay = 1000*60*60*24
+var remainingDays = Math.ceil((endOfYear.getTime()-today.getTime())/(oneDay));
+
 var historyTableEl = document.getElementById("history-table");
 var historyTableBodyEl = document.getElementById("history-table-body");
 
@@ -13,9 +27,9 @@ var mediumPostsEl = document.getElementById('medium-posts-container');
 var mediumPostsTitleEl = document.getElementById('medium-posts-title');
 var mediumPostListContainerEl = document.getElementById('medium-post-list-container');
 
-var stravaStatsEl = document.getElementById('strava-stats-container');
+var stravaStatsEl = document.getElementById('strava-stats');
 var stravaStatsTitleEl = document.getElementById('strava-stats-title');
-var stravaStatsListEl = document.getElementById('strava-stats-list');
+var stravaTextEl = document.getElementById('strava-text');
 
 var isTouchDevice = function () {
     return (
@@ -29,11 +43,25 @@ var isTouchDevice = function () {
     );
 };
 
-function descriptionListHelper(dt, dd){
-    if(dt && dt){
+function descriptionListHelper(dt, dd) {
+    if (dt && dt) {
         return `<dt>${dt}:</dt><dd>${dd}</dd>`;
-    }else{
+    } else {
         return empty;
+    }
+}
+
+function kilometerFormatter(metersInt, prettyfied) {
+    //Takes meters, converts it to kilometers, rounds the number
+    //and makes it look good
+    var kilometers = metersInt / 1000;
+    var roundedKilometers = Math.round(kilometers * 10) / 10;
+
+    if (prettyfied) {
+        return roundedKilometers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+    else {
+        return roundedKilometers;
     }
 }
 
@@ -85,17 +113,47 @@ function init() {
 
     fetch('https://www.strava.com/api/v3/athletes/10448277/stats/?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb').then(function (response) {
         return response.json().then(function (data) {
-            stravaData = data;
+            if (data.ytd_run_totals) {
 
-            if(stravaData.ytd_run_totals){
+                stravaData = data.ytd_run_totals;
+                console.log(stravaData);
+
                 stravaStatsEl.dataset.fetchSuccess = true;
-                stravaStatsTitleEl.innerHTML = "Stats fra Strava";
-                
-                stravaStatsListEl.innerHTML += descriptionListHelper("Løpeturer", stravaData.ytd_run_totals.count);
-                stravaStatsListEl.innerHTML += descriptionListHelper("Distanse", stravaData.ytd_run_totals.distance);
-                stravaStatsListEl.innerHTML += descriptionListHelper("Tid på beina", stravaData.ytd_run_totals.moving_time);
-                stravaStatsListEl.innerHTML += descriptionListHelper("Høydemeter", stravaData.ytd_run_totals.elevation_gain);
+                stravaStatsTitleEl.innerHTML = `Løpe-stats fra Strava`;
 
+                //Distance - meters
+                if (stravaData.distance) {
+                    var formattedDistance = kilometerFormatter(stravaData.distance, true);
+                    var earthComparison = Math.round(funFacts.earthDiameter_km / kilometerFormatter(stravaData.distance, false) * 10) / 10;
+
+                    stravaTextEl.innerHTML += `
+                    <p>
+                        Hittil i ${year} har jeg løpt <em>${formattedDistance} <abbr title="kilometer">km</abbr></em>, noe somilsvarer å ha løpt jorda rundt <em>${earthComparison}</em> ganger.
+                    </p>
+                    `;
+                }
+
+                //Moving time - hours
+                //Elevation gain - meters
+                if (stravaData.moving_time && stravaData.elevation_gain) {
+                    var formattedTime = Math.floor(stravaData.moving_time / 3600);
+                    var everestComparison = Math.round(stravaData.elevation_gain / funFacts.everestHeight_m * 10) / 10;
+
+                    stravaTextEl.innerHTML += `
+                    <p>
+                       Dette har jeg brukt <em>${formattedTime} timer</em> på. 
+                       Det er kanskje ikke kjempeimponerende, men det er tross alt fordelt på <em>${stravaData.elevation_gain} akkumulerte høydemetere</em>. 
+                       Det vil si at jeg har besteget <em>Mount Everest ${everestComparison} ganger</em> fra havnivå på denne strekningen.
+                    </p>
+                    <p>
+                        Det er fortsatt ${remainingDays} dager igjen av året, så det er fortsatt god tid til å pynte på årets statistikk.
+                    </p>
+                    `;
+                }
+
+            }
+            else{
+                console.log('no running stats');
             }
 
         });
@@ -103,7 +161,6 @@ function init() {
         console.log(error);
         stravaStatsEl.innerHTML = "";
     });
-
 
     fetch("https://exec.clay.run/nicoslepicos/medium-get-user-posts-new?profile=hanserino", {
         headers: {

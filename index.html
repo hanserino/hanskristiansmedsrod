@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
 
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -91,7 +91,7 @@
                     <a href="http://skyrunning.com/">Skyrunning</a>-serien, men også gjort noen andre kortere og lengre
                     <a href="#historikk">race og ekspedisjoner</a>. Samtidig brenner jeg for historiefortelling – uavhengig av medium. Jeg skriver,
                     tar bilder, filmer og programmerer fra "the great outdoors". Denne nettsiden fungerer som en hub for
-                    min synlighet på nett samtidig som en promo-site for meg som elite-utøver.</p>
+                    min synlighet på nett samtidig som den er en promo-site for meg som elite-utøver.</p>
             </div>
             <figure class="box pic">
                 <img src="./media/pics/03.jpg" alt="Målgang Abades Stone Race">
@@ -205,9 +205,20 @@
                 </figcaption>
             </figure>
 
-            <div class="box text" id="strava-stats-container" data-fetch-success="false">
+            <figure class="box pic mobile-hidden">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./media/pics/06.jpg">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" aria-hidden="true" />
+                </picture>
+
+                <figcaption>
+                    På vei opp Hamperokken 1404moh
+                </figcaption>
+            </figure>
+
+            <div class="box text" id="strava-stats" data-fetch-success="false">
                 <h2 id="strava-stats-title">Henter Strava-stats..</h2>
-                <dl id="strava-stats-list"></dl>
+                <div id="strava-text"></div>
             </div>
 
             <section id="medium-posts-container" data-fetch-success="false">
