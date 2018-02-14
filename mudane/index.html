@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Mudane</title>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+
+		<style>
+
+			body{
+				text-align: center;
+			}
+
+			.logo-container{
+				margin: 0 auto;
+				width: 100%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				top: 50%;
+				left: 50%;
+			}
+
+			.logo-container img{
+				max-width: 50vw;
+				margin: 0 auto;
+				height: auto;
+			}
+
+			#logo-text{
+				display: block;
+				font-family: 'Phosphate';
+				font-size: 8vw;
+				line-height: 1;
+				margin: 2.5rem 0;
+			}
+
+			.download-button{
+				text-decoration: none;
+				padding: 1rem;
+				display: inline-block;
+				font-size: .8rem;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.download-button:hover{
+				text-decoration: underline;
+			}
+		</style>
+    </head>
+
+    <body>
+		<div class="logo-container">
+			<img src="assets/mudane_logo_standalone.svg" />
+			<p id="logo-text">Mudane <span id="variant"></span></p>
+		</div>
+
+		<a class="download-button" href="assets/mudane-logo.zip">Download mudane-logo.zip</a>
+
+	<script>
+
+		window.onload = function() {
+			document.body.className += " loaded";
+		}
+
+		var words = ["team", "co.", "running", "life"];
+		var wordsEl = document.getElementById("variant");
+		var pause = 3000;
+
+		var i = 0, l = words.length;
+
+		(function iterator() {
+			wordsEl.innerHTML = words[i];
+
+			if(++i<l) {
+				setTimeout(iterator, pause);
+				
+			}
+			if(i === l){
+				i = 0;
+				setTimeout(iterator, pause);
+			}
+		})();
+
+	
+	</script>
+
+    </body>
+</html>
