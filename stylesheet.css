@@ -61,12 +61,14 @@ h2{
     margin: 0 0 .75rem 0;
 }
 
-.header{
-    width: 100vw;
+.header {
+    width: 100%;
     height: 100vh;
     position: relative;
     border: 0px solid black;
     border-width: 0 0 2px 0;
+
+    overflow: hidden; /* skru av denne dersom video blir brukt */
 }
 
 .header::before{
@@ -142,11 +144,14 @@ h2{
 .loaded .header__title > span:last-child{
     transition-delay: 1.5s;
 }
-.header__video{
-    width: 100%;
+
+.header__video,
+.header__image {
+    width: 100%; 
     height: 100%;
     object-fit: cover;
 }
+
 .main{
     display: flex;
     flex-wrap: wrap;
