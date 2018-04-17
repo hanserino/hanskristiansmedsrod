@@ -21,7 +21,7 @@
         "date": "22.04.2017",
         "category": "Race",
         "location": "Kristiansand, Norge",
-        "description": "1. plass KRS Ultra 60km"
+        "description": "1. plass KRSUltra 60km"
     },
     {
         "date": "03.06.2017",
@@ -58,5 +58,11 @@
         "category": "Race",
         "location": "Loja, Spania",
         "description": "2. plass Abades Stone Race 43km"
+    },
+    {
+        "date": "14.04.2018",
+        "category": "Race",
+        "location": "Kristiansand, Norge",
+        "description": "2. plass KRSUltra 60km"
     }
 ]
