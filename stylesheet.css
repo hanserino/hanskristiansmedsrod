@@ -127,12 +127,13 @@ h2{
     fill: currentColor;
 }
 
-.header__socials a{
+.header__socials a {
     color: white;
     text-decoration: none;
     display: block;
     padding: 1rem;
-} 
+    transition: .25s color linear 0s;
+}
 
 .header__title > span{
     opacity: 0;
@@ -143,6 +144,15 @@ h2{
 }
 .loaded .header__title > span:last-child{
     transition-delay: 1.5s;
+}
+.loaded .header__socials a {
+    transition-delay: 1.5s;
+}
+.loaded .header__socials a {
+    color: black;
+}
+.loaded.no-touch .header__socials a:hover {
+    background: rgba(255,255,255,.5)
 }
 
 .header__video,
