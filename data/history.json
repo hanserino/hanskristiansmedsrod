@@ -64,5 +64,12 @@
         "category": "Race",
         "location": "Kristiansand, Norge",
         "description": "2. plass KRSUltra 60km"
+    },
+    {
+        "date": "14.09.2018",
+        "category": "Race",
+        "location": "Kinlochleven, Skottland",
+        "description": "VM Ultra Skyrunning, Ben Nevis Ultra, Skottland",
+        "description": "14. plassVM Ultra Skyrunning"
     }
 ]
