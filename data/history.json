@@ -69,7 +69,13 @@
         "date": "14.09.2018",
         "category": "Race",
         "location": "Kinlochleven, Skottland",
-        "description": "VM Ultra Skyrunning, Ben Nevis Ultra, Skottland",
-        "description": "14. plass VM Ultra Skyrunning"
-    }
+        "description": "14. plass VM Ultra Skyrunning, Ben Nevis Ultra, Skottland"
+    },
+    {
+        "date": "13.10.2018",
+        "category": "Race",
+        "location": "Limone Sul Garda, Italia",
+        "description": "16. plass Limone Extreme Skyrace"
+    },
+    
 ]
