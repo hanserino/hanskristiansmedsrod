@@ -1,3 +1,3 @@
-#Vo2Max - Hva er det og hvorfor fokusere på det?
+# Vo2Max - Hva er det og hvorfor fokusere pÃ¥ det?
 
 Vo2max er i bunn og grunn...
