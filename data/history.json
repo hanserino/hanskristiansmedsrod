@@ -49,7 +49,7 @@
     },
     {
         "date": "15.10.2017",
-        "category": "Sammendrag",
+        "category": "Sammenlagt",
         "location": "",
         "description": "8. plass Skyrunning Extreme Series 2017 sammenlagt"
     },
@@ -64,5 +64,17 @@
         "category": "Race",
         "location": "Kristiansand, Norge",
         "description": "2. plass KRSUltra 60km"
+    },
+    {
+        "date": "14.09.2018",
+        "category": "Race",
+        "location": "Kinlochleven, Skottland",
+        "description": "14. plass VM Ultra Skyrunning, Ben Nevis Ultra, Skottland"
+    },
+    {
+        "date": "13.10.2018",
+        "category": "Race",
+        "location": "Limone Sul Garda, Italia",
+        "description": "16. plass Limone Extreme Skyrace"
     }
 ]
