@@ -356,6 +356,8 @@ ul.spons-list{
 .spons-logo{
     float: left;
     margin: .25rem 1rem 0 0;
+    padding: .5rem;
+    border: 1px solid rgba(0,0,0,0.1);
 }
 
 .spons-list-item.blank .spons-logo{
