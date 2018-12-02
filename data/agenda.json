@@ -1,60 +1,63 @@
 [
     {
-        "date": "10.-14.01.2018",
-        "category": "Treningsleir",
-        "description": "Tre-dagers løpetur over Gran Canaria",
-        "url": "https://sondreamdahl.com/inspirasjon/"
-    },
-    {
-        "date": "01.-17.02.2018",
-        "category": "Treningsleir",
-        "description": "Høydetrening-camp i Yaya Village, Addis Abeba, Etiopia",
-        "url": "http://www.yayavillage.com/cms.php?pid=%2033"
-    },
-    {
-        "date": "14.04.2018",
+        "date": "16.02.2019",
         "category": "Race",
-        "location": "Kristiansand, Norge",
-        "description": "Mizuno KRSUltra 60km, Kristiansand, Norge",
-        "url": "http://krsultra.no/"
+        "distance": "50km",
+        "gain": "0m",
+        "description": "Bislett 50km, Oslo, Norge",
+        "url": "https://www.bislettstadion.no/bislett-alliansen/arrangementer/bislett-50km/"
     },
     {
-        "date": "13.05.2018",
+        "date": "30.03.2019",
         "category": "Race",
-        "description": "VM Terrengultra, Penyagolosa, Spania",
-        "url": "https://www.kondis.no/7-loepere-tatt-ut-til-vm-terrengultra-2018.6055378-127695.html"
+        "description": "Romsdal Rando",
+        "url": "https://romsdalrando.com/"
     },
     {
-        "date": "Sommeren 2018",
+        "date": "21.04.2019",
+        "category": "Race",
+        "distance": "31km",
+        "gain": "+2000m",
+        "description": "Sky: Mt Awa SkyRace, Sanjō, Japan",
+        "url": "https://www.mtawaverticalkirometer.com/home-1"
+    },
+    {
+        "date": "11.05.2019",
+        "category": "Race",
+        "description": "SuperSky: Transvulcania, La Palma, Spania",
+        "url": "http://transvulcania.es/?lang=en"
+    },
+    {
+        "date": "15.06.2019",
+        "category": "Race",
+        "distance": "34km",
+        "gain": "+2700m",
+        "description": "SuperSky: Livigno SkyMarathon, Livigno, Italia",
+        "url": "http://www.altavaltellinaskyrunning.com/en/livigno-skymarathon"
+    },
+    {
+        "date": "14.07.2019",
+        "category": "Race",
+        "distance": "42km",
+        "gain": "+3325m",
+        "description": "SuperSky: Buff Epic Trail, Barruera, Spania",
+        "url": "http://www.buffepictrail.com/"
+    },
+    {
+        "date": "23.08.2019",
+        "category": "Race",
+        "distance": "24km",
+        "gain": "+2800m",
+        "description": "SuperSky: Matterhorn Ultraks «Extreme»",
+        "url": "http://matterhorn.ultraks.ch/en/"
+    },
+    {
+        "date": "Høsten 2019",
         "category": "FKT-forsøk",
         "location": "Kvaløya, Tromsø, Norge",
-        "description": "Rekordforsøk over Ersfjordtraversen. Foreløpig rekordholder er Kilian Jornet på 4:49'30",
+        "distance": "",
+        "gain": "",
+        "description": "Rekordforsøk: Ersfjordtraversen. Foreløpig rekordholder er Kilian Jornet på 4:49'30",
         "url": "http://kugo.no/2014/08/ersfjordtraversen/"
-    },
-    {
-        "date": "25.07.2018",
-        "category": "Ekspedisjon / FKT",
-        "location": "Oslo - Galdhøpiggen",
-        "description": "Løpe fra Operahuset i Oslo til Galdhøpiggen på under 4 døgn",
-        "url": "https://no.wikipedia.org/wiki/Jotunheimstien"
-    },
-    {
-        "date": "15.09.2018",
-        "category": "Race",
-        "location": "Kinlochleven, Skottland",
-        "description": "VM Ultra Skyrunning, Glen Coe Skyline, Skottland",
-        "url": "http://www.skyrunning.com/scotland-host-2018-skyrunning-world-championships/"
-    },
-    {
-        "date": "29.09.2018",
-        "category": "Race",
-        "description": "Oslos Bratteste",
-        "url": "http://www.oslosbratteste.no/"
-    },
-    {
-        "date": "13.10.2018",
-        "category": "Race",
-        "description": "Limone Skyrace Extreme",
-        "url": "http://www.limonextreme.com/en/limone-extreme-skyrace-oct-13-2018"
     }
 ]
