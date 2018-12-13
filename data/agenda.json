@@ -1,5 +1,13 @@
 [
     {
+        "date": "11.01.2019",
+        "category": "Race",
+        "distance": "Multi stage",
+        "gain": "0m",
+        "description": "Sandsjöbacka Trail, Sprinttrippel",
+        "url": "http://sandsjobackatrail.se/distanser/sprinttrippel/"
+    },
+    {
         "date": "16.02.2019",
         "category": "Race",
         "distance": "50km",
