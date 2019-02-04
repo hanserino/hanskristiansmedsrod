@@ -1,11 +1,11 @@
 [
     {
-        "date": "11.01.2019",
-        "category": "Race",
-        "distance": "Multi stage",
+        "date": "08.01.2019",
+        "category": "Treningsleir",
+        "distance": "",
         "gain": "0m",
-        "description": "Sandsjöbacka Trail, Sprinttrippel",
-        "url": "http://sandsjobackatrail.se/distanser/sprinttrippel/"
+        "description": "Treningsleir. Tejeda, Gran Canaria, Spania",
+        "url": "https://sondreamdahl.com/inspirasjon/"
     },
     {
         "date": "16.02.2019",
@@ -14,12 +14,6 @@
         "gain": "0m",
         "description": "Bislett 50km, Oslo, Norge",
         "url": "https://www.bislettstadion.no/bislett-alliansen/arrangementer/bislett-50km/"
-    },
-    {
-        "date": "30.03.2019",
-        "category": "Race",
-        "description": "Romsdal Rando",
-        "url": "https://romsdalrando.com/"
     },
     {
         "date": "21.04.2019",
