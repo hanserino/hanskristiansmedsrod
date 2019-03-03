@@ -76,6 +76,7 @@ h2{
     overflow: hidden; /* skru av denne dersom video blir brukt */
 }
 
+
 .header::before{
     content: "";
     position: absolute;
@@ -112,6 +113,7 @@ h2{
     left: 0;
     width: 100%;
     padding: 1rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.5);
 }
 
 .header__socials{
