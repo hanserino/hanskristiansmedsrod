@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109864300-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-109864300-1');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Hans Kristian Smedsrød - Race Tee </title>
+        <meta property="og:site_name" content="Hans Kristian Smedsrød" />
+        <meta property="og:title" content="Race-t-skjorte" />
+        <meta property="og:image" content="./media/pics/04.JPG">
+        <meta property="og:url" content="http://hanskristiansmedsrod.no/">
+        <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">
+        
+        <style>
+            html, body, div, span,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, img,
+            small,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas,
+            figure, figcaption, footer, header, 
+            nav, output, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            html {
+                box-sizing: border-box;
+                font-size: 100%;
+            }
+            body{
+                padding: 0;
+            }
+            #patrons {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            li{
+                width: 200px;
+                height: 200px;
+                flex: auto;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+        </style>
+    </head>
+
+    <body class="race-tee">
+
+        <ul id="patrons"></ul>
+
+        <script>
+            
+            function renderPic(inc) {
+                var picHtml = `<li><img src="/media/patronPics/${inc}.jpg"></li>`;
+              
+                return picHtml;
+            }
+
+
+            window.addEventListener('load', function () {
+                var patronsEl = document.getElementById("patrons");
+
+                for (var i = 1; i < 49; i++) { 
+                    patronsEl.innerHTML += renderPic(i);
+                }
+              
+            });
+
+        </script>
+
+    </body>
+        
+
+</html>
