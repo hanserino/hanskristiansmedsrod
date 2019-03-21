@@ -52,18 +52,21 @@
                 padding: 0;
                 display: flex;
                 flex-wrap: wrap;
-                width: 100%;
+                width: 1300px;
+                margin: 0 auto;
             }
             li{
-                width: 200px;
-                height: 200px;
+                width: 100px;
+                height: 100px;
                 flex: auto;
+                margin: 0;
+                padding: 0;
             }
             img{
                 width: 100%;
                 height: auto;
             }
-
+ 
         </style>
     </head>
 
@@ -83,7 +86,7 @@
             window.addEventListener('load', function () {
                 var patronsEl = document.getElementById("patrons");
 
-                for (var i = 1; i < 49; i++) { 
+                for (var i = 1; i < 53; i++) { 
                     patronsEl.innerHTML += renderPic(i);
                 }
               
