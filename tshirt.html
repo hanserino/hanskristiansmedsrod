@@ -18,6 +18,7 @@
         <meta property="og:title" content="Race-t-skjorte" />
         <meta property="og:image" content="./media/pics/04.JPG">
         <meta property="og:url" content="http://hanskristiansmedsrod.no/">
+        
         <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">
         
         <style>
@@ -46,31 +47,45 @@
             }
             body{
                 padding: 0;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            h1, h2 {
+                font-family: 'Bangers', cursive;    
             }
             #patrons {
                 list-style: none;
                 padding: 0;
                 display: flex;
                 flex-wrap: wrap;
-                width: 1300px;
+                width: 100%;
                 margin: 0 auto;
             }
             li{
-                width: 100px;
-                height: 100px;
+                width: 200px;
+                height: 200px;
                 flex: auto;
                 margin: 0;
                 padding: 0;
             }
+
             img{
                 width: 100%;
                 height: auto;
+            }
+            h1{
+                font-size: 2rem;
+                display: block;
+                text-align: center;
+                margin: 1rem 0;
             }
  
         </style>
     </head>
 
     <body class="race-tee">
+
+        <h1>Transvulcania 2019 NEDA-patreoner</h1>
 
         <ul id="patrons"></ul>
 
@@ -86,10 +101,10 @@
             window.addEventListener('load', function () {
                 var patronsEl = document.getElementById("patrons");
 
-                for (var i = 1; i < 53; i++) { 
+
+                for (var i = 1; i < 54; i++) { 
                     patronsEl.innerHTML += renderPic(i);
                 }
-              
             });
 
         </script>
