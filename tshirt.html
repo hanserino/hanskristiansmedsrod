@@ -47,69 +47,202 @@
             }
             body{
                 padding: 0;
+                text-align: center;
                 font-family: 'Open Sans', sans-serif;
+                background: transparent url('media/la-palma.jpg') no-repeat top center;
+                background-size: cover;
             }
             
             h1, h2 {
                 font-family: 'Bangers', cursive;    
             }
+
+            .tshirt{
+                max-width: 1000px;
+                height: auto;
+                position: relative;
+                text-align: center;
+                margin: 4rem auto 0 auto;
+                padding: 0;
+            }
+
+            .tshirt__title {
+                position: absolute;
+                top: 25%;
+                left: 0;
+                transform: translate(0, -50%);
+                display: block;
+                width: 100%;
+                font-size: 2.85vw;
+                color: white;
+            }
+
+            .tshirt__img {
+                display: inline-block;
+                width: 100%;
+            }
+
             #patrons {
                 list-style: none;
                 padding: 0;
                 display: flex;
                 flex-wrap: wrap;
-                width: 100%;
                 margin: 0 auto;
-                
+                position: absolute;
+                width: 38%;
+                left: 50%;
+                top: 32%;
+                transform: translate(-50%, 0);
             }
+
             li{
-                width: 200px;
-                height: 200px;
+                width: 10%;
+                height: auto;
                 flex: auto;
                 margin: 0;
                 padding: 0;
+                transition: .25s opacity ease 0;
+                opacity: 1;
+            }
+            
+            ul:hover{
+
+            }
+
+            ul:hover li{
+                opacity: .5;
+            }
+            ul:hover li:hover{
+                opacity: 1;
+            }
+
+            li.active{
+                width: 100%;
             }
 
             img{
                 width: 100%;
                 height: auto;
-            }
-            h1{
-                font-size: 2rem;
                 display: block;
-                text-align: center;
-                margin: 1rem 0;
             }
- 
+
+            .join{
+                position: relative;
+                z-index: 2;
+                color: black;
+                font-size: 1rem;
+                padding: 0 1rem;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .join a {
+                display: inline-block;
+                margin: 1rem 0;
+                font-family: sans-serif;
+                background-color: rgb(232, 91, 70);
+                color: white;
+                padding: .5rem 1rem;
+                text-decoration: none;
+                border-radius: 1rem;
+            }
+
+            .join span{
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: .25rem;
+            }
+
+            .patreon-logo{
+                align-self: center;
+                fill: transparent;
+                stroke-width: 1.2px;
+                height: 0.75rem;
+                width: 0.75rem;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .patreon-logo circle {
+                fill: #ffffff;
+            }
+            .patreon-logo rect {
+                fill: rgb(5, 45, 73);
+            }
+
+            .tshirt, .tshirt__title, #patrons, .tshirt__join {
+                opacity: 0;
+                transition: .25s opacity ease-out .1s;
+            }
+
+            .tshirt {transition-delay: 0}
+            .tshirt__title {transition-delay: .25s}
+            #patrons {transition-delay: .5s}
+            .tshirt__join {transition-delay: 1s}
+
+            .tshirt,
+            .tshirt__title,
+            #patrons,
+            .tshirt__join {opacity: 0;}
+            
+            [data-loaded="true"] .tshirt,
+            [data-loaded="true"] .tshirt__title,
+            [data-loaded="true"] #patrons,
+            [data-loaded="true"] .tshirt__title,
+            [data-loaded="true"] .tshirt__join {opacity: 1;}
+
+        
+            .neda-logo{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                width: 100px;
+                height: 100px;
+            }
+
         </style>
     </head>
 
     <body class="race-tee">
+        <img class="neda-logo" src="media/neda-logo.png" alt="NÅ ER DET ALVOR logo">
 
-        <h1>Transvulcania 2019 NEDA-patreoner</h1>
+        <div class="tshirt">
+            <h1 class="tshirt__title">⚡️ Transvulcania 2019 NEDA-patreoner ⚡️</h1>
+            <img class="tshirt__img" src="media/tshirt-cropped.png" alt="siluetten av en tskjorte">
+            <ul id="patrons"></ul>
+        </div>
 
-        <ul id="patrons"></ul>
-
+        <div class="join">
+            <p>Vil du også bli med på <abbr title="Programleder Hans Kristian">HK</abbr>'s <abbr title="Nå Er Det Alvor">NEDA</abbr> Race-T-skjorte som skal brukes over fjellene på La Palma 11. mai? Ikke bare blir du med på T-skjorta, men du støtter produksjonen av favoritt-podcasten din og sørger for at det rulles ut flere episoder.</p>
+            <a href="https://www.patreon.com/join/1555279/checkout?rid=2543654">
+                <svg class="patreon-logo" viewBox="0 0 569 546" xmlns="http://www.w3.org/2000/svg"><g><circle data-fill="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle><rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect></g></svg>
+                <span>Bli Patreon av NEDA her</span>
+            </a>
+        </div>
+        
         <script>
             
             function renderPic(inc) {
                 var picHtml = `<li><img src="/media/patronPics/${inc}.jpg"></li>`;
-              
                 return picHtml;
             }
-
+        
 
             window.addEventListener('load', function () {
                 var patronsEl = document.getElementById("patrons");
 
-                for (var i = 1; i < 56; i++) { 
+                for (var i = 1; i < 59; i++) { 
                     patronsEl.innerHTML += renderPic(i);
                 }
+
+                document.body.setAttribute('data-loaded', 'true');
+
             });
+
+            
 
         </script>
 
     </body>
         
 
-</html>
+</html> 
