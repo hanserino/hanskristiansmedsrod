@@ -240,14 +240,24 @@
         <script>
             
             function renderPic(inc) {
-                var picHtml = `<li><img src="/media/patronPics/${inc}.jpg"></li>`;
+                var picHtml = `<li onclick="setActive(this, ${inc})" class="patrons__patron"><img src="/media/patronPics/${inc}.jpg"></li>`;
                 return picHtml;
             }
-        
 
+            function setActive(el, i){
+                var siblings = el.parentNode.children;
+                let allElements = Array.from(siblings)
+
+                for (let element of allElements) {
+                    element.classList.remove('active')
+                }
+                el.classList.add("active");
+
+            }
+        
             window.addEventListener('load', function () {
                 var patronsEl = document.getElementById("patrons");
-
+                
                 for (var i = 1; i < 59; i++) { 
                     patronsEl.innerHTML += renderPic(i);
                 }
