@@ -70,7 +70,7 @@
 
             .tshirt__title {
                 position: absolute;
-                top: 15%;
+                top: 15%; 
                 left: 0;
                 transform: translate(0, -50%);
                 display: block;
@@ -83,7 +83,7 @@
                 .tshirt__title {
                     font-size: 2rem;
                 }
-            }
+            } 
 
             .tshirt__img {
                 display: inline-block;
@@ -327,6 +327,8 @@
             function setActive(el, i){
                 var siblings = el.parentNode.children;
                 let allElements = Array.from(siblings)
+
+                console.log(i);
 
                 for (let element of allElements) {
                     element.classList.remove('active')
