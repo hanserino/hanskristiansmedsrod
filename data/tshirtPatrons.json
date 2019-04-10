@@ -96,6 +96,10 @@
         "img_url": "15.jpg"
     },
     {
+        "name": "Knut Einar",
+        "img_url": "blank.jpg"
+    },
+    {
         "name": "Liss",
         "img_url": "56.jpg"
     },
@@ -218,6 +222,10 @@
     {
         "name": "Tor Christian",
         "img_url": "54.jpg"
+    },
+    {
+        "name": "Truls",
+        "img_url": "blank.png"
     },
     {
         "name": "Tyler",
