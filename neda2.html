@@ -16,7 +16,7 @@
         <title>Støtt NEDA og bli med på race-T-skjorta!</title>
         <meta property="og:site_name" content="NÅ ER DET ALVOR race-T-skjorte" />
         <meta property="og:title" content="Støtt NEDA og bli med på race-T-skjorta!" />
-        <meta property="og:image" content="media/tshirt-fb-pic.jpg">
+        <meta property="og:image" content="media/printout-fb-pic.jpg">
         <meta property="og:url" content="https://hanskristiansmedsrod.no/neda">
         
         <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">
@@ -51,24 +51,13 @@
                 padding: 0;
                 text-align: center;
                 font-family: 'Open Sans', sans-serif;
-                background: transparent url('media/la-palma.jpg') no-repeat top center;
-                background-size: cover;
             }
             
             h1, h2, .patron-name {
                 font-family: 'Bangers', cursive;    
             }
 
-            .tshirt{
-                max-width: 1000px;
-                height: auto;
-                position: relative;
-                text-align: center;
-                margin: 4rem auto 0 auto;
-                padding: 0;
-            }
-
-            .tshirt__title {
+            .printout__title {
                 position: absolute;
                 top: 15%; 
                 left: 0;
@@ -80,12 +69,12 @@
             }
 
             @media (min-width: 650px){
-                .tshirt__title {
+                .printout__title {
                     font-size: 2rem;
                 }
             } 
 
-            .tshirt__img {
+            .printout__img {
                 display: inline-block;
                 width: 100%;
             }
@@ -96,11 +85,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin: 0 auto;
-                position: absolute;
-                width: 38%;
-                left: 50%;
-                top: 22%;
-                transform: translate(-50%, 0);
+                position: relative;
             }
 
             li{
@@ -201,32 +186,32 @@
                 fill: rgb(5, 45, 73);
             }
 
-            .tshirt, 
-            .tshirt__title, 
+            .printout, 
+            .printout__title, 
             #patrons, 
-            .tshirt__join,
+            .printout__join,
             .neda-logo {
                 opacity: 0;
                 transition: .25s opacity ease-out .1s;
             }
 
-            .tshirt {transition-delay: 0}
-            .tshirt__title {transition-delay: .25s}
+            .printout {transition-delay: 0}
+            .printout__title {transition-delay: .25s}
             #patrons {transition-delay: .5s}
-            .tshirt__join {transition-delay: 1s}
-            .tshirt__join {transition-delay: 0s}
+            .printout__join {transition-delay: 1s}
+            .printout__join {transition-delay: 0s}
 
-            .tshirt,
-            .tshirt__title,
+            .printout,
+            .printout__title,
             #patrons,
             .neda-logo,
-            .tshirt__join {opacity: 0;}
+            .printout__join {opacity: 0;}
             
-            [data-loaded="true"] .tshirt,
-            [data-loaded="true"] .tshirt__title,
+            [data-loaded="true"] .printout,
+            [data-loaded="true"] .printout__title,
             [data-loaded="true"] #patrons,
             [data-loaded="true"] .neda-logo,
-            [data-loaded="true"] .tshirt__join {opacity: 1;}
+            [data-loaded="true"] .printout__join {opacity: 1;}
 
             .neda-logo{
                 position: absolute;
@@ -293,9 +278,8 @@
             <img src="media/neda-logo.png" alt="NÅ ER DET ALVOR logo">
         </a>
 
-        <div class="tshirt">
-            <h1 class="tshirt__title">⚡️ Transvulcania 2019 NEDA-patreoner ⚡️</h1>
-            <img class="tshirt__img" src="media/tshirt-black-blank.png" alt="siluetten av en tskjorte">
+        <div class="printout">
+            <h1 class="printout__title">⚡️ Wall of fame ⚡️</h1>
             <ul id="patrons"></ul>
         </div> 
 
@@ -306,10 +290,6 @@
                 <svg class="patreon-logo" viewBox="0 0 569 546" xmlns="http://www.w3.org/2000/svg"><g><circle data-fill="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle><rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect></g></svg>
                 <span>Bli NEDA-Patreon du og!</span>
             </a>
-        </div>
-
-        <div class="pic_copyright">
-            <p>PS! Bakgrunnsbildet er lånt av fotograf og ultraløper Teemu Vidgrén som løp Transvulcania i 2017. <a href="https://teemu.online/2017/05/14/transvulcania-2017/" target="_blank">Sjekk ut race-reporten og bloggen hans her.</a></p>
         </div>
         
         <script>
