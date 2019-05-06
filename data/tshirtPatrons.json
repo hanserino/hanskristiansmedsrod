@@ -40,10 +40,6 @@
         "img_url": "50.jpg"
     },
     {
-        "name": "Chris André",
-        "img_url": "42.jpg"
-    },
-    {
         "name": "Christel",
         "img_url": "3.jpg"
     },
@@ -225,7 +221,7 @@
     },
     {
         "name": "Truls",
-        "img_url": "blank.png"
+        "img_url": "truls.jpg"
     },
     {
         "name": "Tyler",
@@ -242,5 +238,9 @@
     {
         "name": "Vegard R",
         "img_url": "34.jpg"
+    },
+    {
+        "name": "Øyvind",
+        "img_url": "oyvind.jpg"
     }
 ]

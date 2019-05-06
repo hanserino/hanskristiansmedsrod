@@ -317,7 +317,7 @@
             var patrons = {};
             
             function renderPic(inc, name, picName) {
-                var picHtml = `<li onclick="setActive(this, ${inc})" class="patrons__patron">
+                var picHtml = `<li onclick="setActive(this, ${inc})" title="${name}" class="patrons__patron">
                                 <img class="patron-pic" src="/media/patronPics/${picName}">
                                 <span class="patron-name">${name}</span>
                             </li>`;
