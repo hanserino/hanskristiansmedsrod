@@ -136,6 +136,10 @@
         "img_url": "19.jpg"
     },
     {
+        "name": "Mika",
+        "img_url": "mika.jpg"
+    },
+    {
         "name": "Monika",
         "img_url": "51.jpg"
     },
@@ -214,6 +218,10 @@
     {
         "name": "Terje",
         "img_url": "29.jpg"
+    },
+    {
+        "name": "Therese",
+        "img_url": "therese.jpg"
     },
     {
         "name": "Thomas S",
