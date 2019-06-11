@@ -1,11 +1,5 @@
 [
     {
-        "date": "14.03.2016",
-        "category": "Ekspedisjon / FKT",
-        "location": "Soray Pampa, Peru",
-        "description": "Besteg Cerro Soray 5440moh i ett push"
-    },
-    {
         "date": "26.06.2016",
         "category": "Race",
         "location": "Gjerdrum, Akershus",
@@ -88,5 +82,11 @@
         "category": "Race",
         "location": "La Palma, Kanariøyene, Spania",
         "description": "15. plass Transvulcania"
+    },
+    {
+        "date": "08.06.2019",
+        "category": "Race",
+        "location": "Miranda do Corvo, Portugal",
+        "description": "39. plass VM Terrengultra"
     }
 ]

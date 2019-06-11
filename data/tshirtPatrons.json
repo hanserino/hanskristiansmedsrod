@@ -148,16 +148,16 @@
         "img_url": "19.jpg"
     },
     {
-        "name": "Mika",
-        "img_url": "mika.jpg"
-    },
-    {
         "name": "Monika",
         "img_url": "51.jpg"
     },
     {
         "name": "Ola",
         "img_url": "20.jpg"
+    },
+    {
+        "name": "Olav",
+        "img_url": "blank.jpg"
     },
     {
         "name": "Ole-Anders",
@@ -254,6 +254,10 @@
     {
         "name": "Tor Christian",
         "img_url": "54.jpg"
+    },
+    {
+        "name": "Truls",
+        "img_url": "blank.png"
     },
     {
         "name": "Truls",
