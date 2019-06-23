@@ -64,6 +64,10 @@
         "img_url": "55.jpg"
     },
     {
+        "name": "I Am Speed",
+        "img_url": "blank.jpg"
+    },
+    {
         "name": "Iselin",
         "img_url": "10.jpg"
     },
@@ -97,7 +101,7 @@
     },
     {
         "name": "Kristian",
-        "img_url": "knut.jpg"
+        "img_url": "blank.jpg"
     },
     {
         "name": "Liss",
@@ -150,10 +154,6 @@
     {
         "name": "Pål",
         "img_url": "1.jpg"
-    },
-    {
-        "name": "Rasmus",
-        "img_url": "40.jpg"
     },
     {
         "name": "Reidun",
