@@ -65,7 +65,7 @@
     },
     {
         "name": "I Am Speed",
-        "img_url": "blank.jpg"
+        "img_url": "blank.png"
     },
     {
         "name": "Iselin",
@@ -101,11 +101,11 @@
     },
     {
         "name": "Kim",
-        "img_url": "blank.jpg"
+        "img_url": "blank.png"
     },
     {
         "name": "Kristian",
-        "img_url": "blank.jpg"
+        "img_url": "blank.png"
     },
     {
         "name": "Liss",
@@ -259,5 +259,9 @@
     {
         "name": "Øyvind",
         "img_url": "oyvind.jpg"
+    },
+    {
+        "name": "Anonymous",
+        "img_url": "blank.png"
     }
 ]

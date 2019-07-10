@@ -13,11 +13,11 @@
         </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Støtt NEDA og bli med på race-T-skjorta!</title>
-        <meta property="og:site_name" content="NÅ ER DET ALVOR race-T-skjorte" />
-        <meta property="og:title" content="Støtt NEDA og bli med på race-T-skjorta!" />
-        <meta property="og:image" content="media/printout-fb-pic.jpg">
-        <meta property="og:url" content="https://hanskristiansmedsrod.no/neda">
+        <title>NEDA Wall Of Fame</title>
+        <meta property="og:site_name" content="NÅ ER DET ALVOR - Wall of fame" />
+        <meta property="og:title" content="NÅ ER DET ALVOR - Wall of fame" />
+        <meta property="og:image" content="wall-of-fame.fb.jpg">
+        <meta property="og:url" content="https://hanskristiansmedsrod.no/patrons">
         
         <link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">
         
@@ -48,7 +48,7 @@
             }
 
             body{
-                padding: 0;
+                padding: 0; 
                 text-align: center;
                 font-family: 'Open Sans', sans-serif;
             }
@@ -57,26 +57,23 @@
                 font-family: 'Bangers', cursive;    
             }
 
-            .printout__title {
-                position: absolute;
-                top: 15%; 
-                left: 0;
-                transform: translate(0, -50%);
+            .title {
                 display: block;
                 width: 100%;
-                font-size: .85rem;
-                color: white;
+                font-size: 2rem;
+                color: black;
+                margin: 0 0 1rem 0;
             }
 
             @media (min-width: 650px){
-                .printout__title {
-                    font-size: 2rem;
+                .title {
+                    font-size: 4rem;
                 }
-            } 
+            }
 
-            .printout__img {
-                display: inline-block;
-                width: 100%;
+            .wrapper{
+                max-width: 960px;
+                margin: 0 auto;
             }
 
             #patrons {
@@ -129,14 +126,13 @@
                 background: black;
                 color: white;
                 padding: .25rem;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 width: auto;
                 right: 50%;
                 bottom: 0;
                 transform: translate(50%, -50%);
                 display: none;
             }
-
 
             .join{
                 position: relative;
@@ -186,8 +182,8 @@
                 fill: rgb(5, 45, 73);
             }
 
-            .printout, 
-            .printout__title, 
+            .wrapper, 
+            .title, 
             #patrons, 
             .printout__join,
             .neda-logo {
@@ -195,32 +191,31 @@
                 transition: .25s opacity ease-out .1s;
             }
 
-            .printout {transition-delay: 0}
-            .printout__title {transition-delay: .25s}
+            .wrapper {transition-delay: 0}
+            .title {transition-delay: .25s}
             #patrons {transition-delay: .5s}
             .printout__join {transition-delay: 1s}
             .printout__join {transition-delay: 0s}
 
-            .printout,
-            .printout__title,
+            .wrapper,
+            .title,
             #patrons,
             .neda-logo,
             .printout__join {opacity: 0;}
             
-            [data-loaded="true"] .printout,
-            [data-loaded="true"] .printout__title,
+            [data-loaded="true"] .wrapper,
+            [data-loaded="true"] .title,
             [data-loaded="true"] #patrons,
             [data-loaded="true"] .neda-logo,
             [data-loaded="true"] .printout__join {opacity: 1;}
 
             .neda-logo{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
+                position: relative;
+                display: inline-block;
+                margin: 1rem;
                 max-width: 100px;
                 width: 10vw;
                 z-index: 2;
-                position: fixed;
                 border-radius: 50%;
                 cursor: pointer;
                 box-shadow: 1px 2px 1px 0px rgba(0,0,0,.75);
@@ -258,7 +253,7 @@
                     transform: translate(50%, 25%);
                     bottom: 50%;
                     right: 25%;
-                    font-size: 1.5rem;
+                    font-size: 3.5rem;
                 }
 
                 li.active img {
@@ -273,20 +268,20 @@
         </style>
     </head>
 
-    <body class="race-tee">
+    <body class="patrons">
         <a class="neda-logo" href="http://alvorpodcast.buzzsprout.com/">
-            <img src="media/neda-logo.png" alt="NÅ ER DET ALVOR logo">
+            <img src="../media/neda-logo.png" alt="NÅ ER DET ALVOR logo">
         </a>
 
-        <div class="printout">
-            <h1 class="printout__title">⚡️ Wall of fame ⚡️</h1>
+        <div class="wrapper">
+            <h1 class="title">Patreon Wall Of Fame</h1>
             <ul id="patrons"></ul>
         </div> 
 
         <div class="join">
-            <p>Vil du også bli med på <abbr title="Programleder Hans Kristian">HK</abbr>'s <abbr title="Nå Er Det Alvor">NEDA</abbr> Race-T-skjorte som skal brukes over fjellene på La Palma 11. mai? Ikke bare blir du med på T-skjorta, men du støtter produksjonen av favoritt-podcasten din og sørger for at det rulles ut flere episoder.</p>
+            <p>Disse menneskene støtter <abbr title="Hans Kristian">HK</abbr> og <abbr title="Nå Er Det Alvor">NEDA</abbr> med $10 eller mer via Patreon-siden til podcasten.</p>
             
-            <a target="_blank" href="https://www.patreon.com/join/1555279/checkout?rid=2543654">
+            <a target="_blank" href="https://www.patreon.com/alvorpodcast">
                 <svg class="patreon-logo" viewBox="0 0 569 546" xmlns="http://www.w3.org/2000/svg"><g><circle data-fill="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle><rect data-fill="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect></g></svg>
                 <span>Bli NEDA-Patreon du og!</span>
             </a>
@@ -298,7 +293,7 @@
             
             function renderPic(inc, name, picName) {
                 var picHtml = `<li onclick="setActive(this, ${inc})" title="${name}" class="patrons__patron">
-                                <img class="patron-pic" src="/media/patronPics/${picName}">
+                                <img class="patron-pic" src="../media/patronPics/${picName}">
                                 <span class="patron-name">${name}</span>
                             </li>`;
                 return picHtml;
@@ -321,7 +316,7 @@
             window.addEventListener('load', function () {
                 var patronsEl = document.getElementById("patrons");
                 
-                fetch('./data/patrons.json').then(function (response) {
+                fetch('../data/patrons.json').then(function (response) {
                     return response.json().then(function (data) {
                         patrons = data;
                         console.log(patrons);
@@ -333,7 +328,6 @@
                 }).catch(error => {
                     console.log(error);
                 });
-            
 
                 document.body.setAttribute('data-loaded', 'true');
 
