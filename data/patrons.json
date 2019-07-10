@@ -60,6 +60,16 @@
         "img_url": "37.jpg"
     },
     {
+        "name": "Gunnar",
+        "img_url": "gunnar.jpg",
+        "new": true
+    },
+    {
+        "name": "Gøran",
+        "img_url": "goran.jpg",
+        "new": true
+    },
+    {
         "name": "Håkon",
         "img_url": "55.jpg"
     },
@@ -73,7 +83,8 @@
     },
     {
         "name": "Inger",
-        "img_url": "blank.png"
+        "img_url": "blank.png",
+        "new": true
     },
     {
         "name": "Janne",
@@ -101,7 +112,8 @@
     },
     {
         "name": "Knut Einar",
-        "img_url": "knut.jpg"
+        "img_url": "knut.jpg",
+        "new": true
     },
     {
         "name": "Kim",
@@ -150,6 +162,11 @@
     {
         "name": "Monika",
         "img_url": "51.jpg"
+    },
+    {
+        "name": "Nina",
+        "img_url": "blank.png",
+        "new": true
     },
     {
         "name": "Ola",
@@ -239,6 +256,10 @@
     {
         "name": "Tor Christian",
         "img_url": "54.jpg"
+    },
+    {
+        "name": "Travålta",
+        "img_url": "travalta.jpg"
     },
     {
         "name": "Truls",

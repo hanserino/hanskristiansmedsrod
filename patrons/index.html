@@ -96,6 +96,25 @@
                 position: relative;
                 cursor: pointer;
             }
+
+            .new-badge{
+                position: absolute;
+                bottom: .25rem;
+                right: .25rem;
+                background: red;
+                color: white;
+                border: 1px solid white;
+                padding: 1px;
+                font-size: .5rem;
+                line-height: 1rem;
+                text-transform: uppercase;
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+            }
+            .active .new-badge {
+                display: none;
+            }
             
             ul:hover li:not(.active){
                 opacity: .5;
@@ -276,7 +295,7 @@
         <div class="wrapper">
             <h1 class="title">Patreon Wall Of Fame</h1>
             <ul id="patrons"></ul>
-        </div> 
+        </div>
 
         <div class="join">
             <p>Disse menneskene støtter <abbr title="Hans Kristian">HK</abbr> og <abbr title="Nå Er Det Alvor">NEDA</abbr> med $10 eller mer via Patreon-siden til podcasten.</p>
@@ -290,11 +309,15 @@
         <script>
 
             var patrons = {};
-            
-            function renderPic(inc, name, picName) {
-                var picHtml = `<li onclick="setActive(this, ${inc})" title="${name}" class="patrons__patron">
+            function renderPic(inc, name, picName, isNew) {
+                var newHtml = "";
+                if (isNew) {
+                    newHtml = `<span class="new-badge">Ny!</span>`;
+                }
+                var picHtml = `<li onclick="setActive(this, ${inc})" title="${name}" class="patrons__patron" data-new="${isNew}">
                                 <img class="patron-pic" src="../media/patronPics/${picName}">
                                 <span class="patron-name">${name}</span>
+                                ${newHtml}
                             </li>`;
                 return picHtml;
             }
@@ -320,9 +343,12 @@
                     return response.json().then(function (data) {
                         patrons = data;
                         console.log(patrons);
+                        let newBadge = false;
 
                         for (var i = 0; i < patrons.length; i++) {
-                            patronsEl.innerHTML += renderPic(i, patrons[i].name, patrons[i].img_url);
+                            newBadge = patrons[i].new;
+
+                            patronsEl.innerHTML += renderPic(i, patrons[i].name, patrons[i].img_url, newBadge);
                         }
                     });
                 }).catch(error => {
