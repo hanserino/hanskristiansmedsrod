@@ -72,6 +72,10 @@
         "img_url": "10.jpg"
     },
     {
+        "name": "Inger",
+        "img_url": "blank.png"
+    },
+    {
         "name": "Janne",
         "img_url": "11.jpg"
     },
@@ -101,7 +105,7 @@
     },
     {
         "name": "Kim",
-        "img_url": "blank.png"
+        "img_url": "kim.jpg"
     },
     {
         "name": "Kristian",
