@@ -28,6 +28,11 @@
         "img_url": "41.jpg"
     },
     {
+        "name": "Bilal",
+        "img_url": "bilal.jpg",
+        "new": true
+    },
+    {
         "name": "Bjørn Otto",
         "img_url": "52.jpg"
     },
@@ -42,6 +47,11 @@
     {
         "name": "Christel",
         "img_url": "3.jpg"
+    },
+    {
+        "name": "Erling",
+        "img_url": "erling.jpg",
+        "new": true
     },
     {
         "name": "Fred",
@@ -117,7 +127,8 @@
     },
     {
         "name": "Kim",
-        "img_url": "kim.jpg"
+        "img_url": "kim.jpg",
+        "new": true
     },
     {
         "name": "Kristian",
@@ -259,11 +270,16 @@
     },
     {
         "name": "Travålta",
-        "img_url": "travalta.jpg"
+        "img_url": "travalta.jpg",
+        "new": true
     },
     {
         "name": "Truls",
         "img_url": "truls.jpg"
+    },
+    {
+        "name": "Trym",
+        "img_url": "trym.jpg"
     },
     {
         "name": "Tyler",
