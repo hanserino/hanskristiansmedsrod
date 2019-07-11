@@ -115,7 +115,7 @@
             .active .new-badge {
                 display: none;
             }
-            
+
             ul:hover li:not(.active){
                 opacity: .5;
             }
@@ -354,6 +354,8 @@
                 }).catch(error => {
                     console.log(error);
                 });
+
+                
 
                 document.body.setAttribute('data-loaded', 'true');
 

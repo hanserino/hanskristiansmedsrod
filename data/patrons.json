@@ -28,6 +28,11 @@
         "img_url": "41.jpg"
     },
     {
+        "name": "Benjamin",
+        "img_url": "blank.png",
+        "new": true
+    },
+    {
         "name": "Bilal",
         "img_url": "bilal.jpg",
         "new": true
