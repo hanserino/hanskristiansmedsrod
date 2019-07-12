@@ -309,5 +309,10 @@
     {
         "name": "Anonymous",
         "img_url": "blank.png"
+    },
+    {
+        "name": "Anonymous 2",
+        "img_url": "blank.png",
+        "new": true
     }
 ]
