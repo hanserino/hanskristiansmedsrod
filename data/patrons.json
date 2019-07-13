@@ -230,7 +230,8 @@
     },
     {
         "name": "Sigve",
-        "img_url": "blank.png"
+        "img_url": "sigve.jpg",
+        "new": true
     },
     {
         "name": "Silje",
