@@ -44,10 +44,6 @@
                 display: inline-block;
                 margin: .2rem;
             }
-            
-            li:not(:last-child):after {
-                content: ",";
-            }
 
             @media (min-width: 650px){
                 .title {
@@ -80,7 +76,7 @@
                 if (isNew) {
                     newHtml = `<span class="new-badge"> - Ny!</span>`;
                 }
-                var picHtml = `<li title="${name}" class="patrons__patron" data-new="${isNew}">${name}</li>`;
+                var picHtml = `<li title="${name}" class="patrons__patron" data-new="${isNew}">${name}, </li>`;
                 return picHtml;
             }
 

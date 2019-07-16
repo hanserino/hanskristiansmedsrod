@@ -12,6 +12,11 @@
         "img_url": "anita.jpg"
     },
     {
+        "name": "Andreas",
+        "img_url": "blank.png",
+        "new": true
+    },
+    {
         "name": "Arthur",
         "img_url": "arthur.jpg"
     },
