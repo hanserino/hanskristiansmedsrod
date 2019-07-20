@@ -255,10 +255,13 @@
         "img_url": "39.jpg"
     },
     {
+        "name": "Sondre",
+        "img_url": "blank.png"
+    },
+    {
         "name": "Stian",
         "img_url": "stian.jpg"
     },
-    
     {
         "name": "Tarjei",
         "img_url": "28.jpg"
