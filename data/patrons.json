@@ -256,7 +256,8 @@
     },
     {
         "name": "Sondre",
-        "img_url": "blank.png"
+        "img_url": "blank.png",
+        "new": true
     },
     {
         "name": "Stian",
