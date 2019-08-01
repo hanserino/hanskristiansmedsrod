@@ -20,7 +20,7 @@
         "category": "Race",
         "distance": "31km",
         "gain": "+2000m",
-        "description": "Sky: Mt Awa SkyRace, Sanjō, Japan",
+        "description": "Mt Awa Skyrace, Sanjō, Japan",
         "url": "https://www.mtawaverticalkirometer.com/home-1"
     },
     {
@@ -58,16 +58,8 @@
         "category": "Race",
         "distance": "27,5km",
         "gain": "+2650m",
-        "description": "Sky: Zacup - Skyrace del Grignone",
+        "description": "Zacup - Skyrace del Grignone",
         "url": "https://www.zacup.it/en/zacup-grigna-skyrace/"
-    },
-    {
-        "date": "05.10.2019",
-        "category": "Race",
-        "distance": "37km",
-        "gain": "+2575m",
-        "description": "Sky: Sky Pirineu, Bagà, Spania",
-        "url": "https://ultrapirineu.com/es/nit"
     },
     {
         "date": "Høsten 2019",
