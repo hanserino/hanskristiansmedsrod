@@ -317,6 +317,11 @@
         "img_url": "34.jpg"
     },
     {
+        "name": "Øivind",
+        "img_url": "oivind.jpg",
+        "new": true
+    },
+    {
         "name": "Øyvind",
         "img_url": "oyvind.jpg"
     },
