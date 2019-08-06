@@ -98,6 +98,11 @@
         "img_url": "blank.png"
     },
     {
+        "name": "Ingvild",
+        "img_url": "ingvild.png",
+        "new": true
+    },
+    {
         "name": "Iselin",
         "img_url": "10.jpg"
     },
