@@ -8,6 +8,10 @@
         "img_url": "57.jpg"
     },
     {
+        "name": "Annette",
+        "img_url": "blank.png"
+    },
+    {
         "name": "Anita",
         "img_url": "anita.jpg"
     },
@@ -160,6 +164,11 @@
     {
         "name": "Magnus",
         "img_url": "magnus.jpg"
+    },
+    {
+        "name": "Magnus",
+        "img_url": "blank.png",
+        "new": true
     },
     {
         "name": "Mads",
