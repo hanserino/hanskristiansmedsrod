@@ -179,6 +179,11 @@
         "img_url": "morten.jpg"
     },
     {
+        "name": "Morten B",
+        "img_url": "morten_b.jpg",
+        "new": true
+    },
+    {
         "name": "Margareth",
         "img_url": "53.jpg"
     },
