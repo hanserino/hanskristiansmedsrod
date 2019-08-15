@@ -25,6 +25,11 @@
         "img_url": "arthur.jpg"
     },
     {
+        "name": "Arvid",
+        "img_url": "arvid.jpeg",
+        "new": true
+    },
+    {
         "name": "Asgeir",
         "img_url": "7.jpg"
     },
