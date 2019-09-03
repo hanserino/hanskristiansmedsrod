@@ -218,6 +218,10 @@
         "img_url": "20.jpg"
     },
     {
+        "name": "Olav",
+        "img_url": "olav.jpg"
+    },
+    {
         "name": "Ole-Anders",
         "img_url": "21.jpg"
     },
@@ -348,6 +352,10 @@
     {
         "name": "Øyvind",
         "img_url": "oyvind.jpg"
+    },
+    {
+        "name": "Øyvind B",
+        "img_url": "oyvind_b.jpg"
     },
     {
         "name": "Anonymous",
