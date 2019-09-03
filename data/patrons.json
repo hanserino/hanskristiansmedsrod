@@ -102,7 +102,6 @@
     {
         "name": "Ingvild",
         "img_url": "ingvild.jpg"
-        
     },
     {
         "name": "Iselin",
@@ -110,7 +109,7 @@
     },
     {
         "name": "Inger",
-        "img_url": "blank.png",  
+        "img_url": "blank.png"
     },
     {
         "name": "Janne",
@@ -162,8 +161,7 @@
     },
     {
         "name": "Magnus",
-        "img_url": "blank.png",
-        
+        "img_url": "blank.png"
     },
     {
         "name": "Mads",
