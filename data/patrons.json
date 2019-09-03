@@ -17,8 +17,7 @@
     },
     {
         "name": "Andreas",
-        "img_url": "blank.png",
-        "new": true
+        "img_url": "blank.png"        
     },
     {
         "name": "Arthur",
@@ -26,8 +25,7 @@
     },
     {
         "name": "Arvid",
-        "img_url": "arvid.jpeg",
-        "new": true
+        "img_url": "arvid.jpeg"
     },
     {
         "name": "Asgeir",
@@ -43,13 +41,11 @@
     },
     {
         "name": "Benjamin",
-        "img_url": "blank.png",
-        "new": true
+        "img_url": "blank.png"        
     },
     {
         "name": "Bilal",
-        "img_url": "bilal.jpg",
-        "new": true
+        "img_url": "bilal.jpg"
     },
     {
         "name": "Bjørn Otto",
@@ -69,8 +65,7 @@
     },
     {
         "name": "Erling",
-        "img_url": "erling.jpg",
-        "new": true
+        "img_url": "erling.jpg"   
     },
     {
         "name": "Fred",
@@ -90,13 +85,11 @@
     },
     {
         "name": "Gunnar",
-        "img_url": "gunnar.jpg",
-        "new": true
+        "img_url": "gunnar.jpg"
     },
     {
         "name": "Gøran",
-        "img_url": "goran.jpg",
-        "new": true
+        "img_url": "goran.jpg"
     },
     {
         "name": "Håkon",
@@ -108,8 +101,8 @@
     },
     {
         "name": "Ingvild",
-        "img_url": "ingvild.jpg",
-        "new": true
+        "img_url": "ingvild.jpg"
+        
     },
     {
         "name": "Iselin",
@@ -117,8 +110,7 @@
     },
     {
         "name": "Inger",
-        "img_url": "blank.png",
-        "new": true
+        "img_url": "blank.png",  
     },
     {
         "name": "Janne",
@@ -146,13 +138,11 @@
     },
     {
         "name": "Knut Einar",
-        "img_url": "knut.jpg",
-        "new": true
+        "img_url": "knut.jpg"
     },
     {
         "name": "Kim",
-        "img_url": "kim.jpg",
-        "new": true
+        "img_url": "kim.jpg"
     },
     {
         "name": "Kristian",
@@ -173,7 +163,7 @@
     {
         "name": "Magnus",
         "img_url": "blank.png",
-        "new": true
+        
     },
     {
         "name": "Mads",
@@ -185,8 +175,7 @@
     },
     {
         "name": "Morten B",
-        "img_url": "morten_b.jpg",
-        "new": true
+        "img_url": "morten_b.jpg"
     },
     {
         "name": "Margareth",
@@ -210,8 +199,7 @@
     },
     {
         "name": "Nina",
-        "img_url": "blank.png",
-        "new": true
+        "img_url": "blank.png"
     },
     {
         "name": "Ola",
@@ -263,8 +251,7 @@
     },
     {
         "name": "Sigve",
-        "img_url": "sigve.jpg",
-        "new": true
+        "img_url": "sigve.jpg"
     },
     {
         "name": "Silje",
@@ -284,8 +271,7 @@
     },
     {
         "name": "Sondre",
-        "img_url": "sondre.jpg",
-        "new": true
+        "img_url": "sondre.jpg"
     },
     {
         "name": "Stian",
@@ -317,8 +303,7 @@
     },
     {
         "name": "Travålta",
-        "img_url": "travalta.jpg",
-        "new": true
+        "img_url": "travalta.jpg"
     },
     {
         "name": "Truls",
@@ -346,8 +331,7 @@
     },
     {
         "name": "Øivind",
-        "img_url": "oivind.jpeg",
-        "new": true
+        "img_url": "oivind.jpeg"
     },
     {
         "name": "Øyvind",
@@ -363,7 +347,6 @@
     },
     {
         "name": "Anonymous 2",
-        "img_url": "blank.png",
-        "new": true
+        "img_url": "blank.png"
     }
 ]
