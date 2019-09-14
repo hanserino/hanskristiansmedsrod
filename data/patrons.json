@@ -152,6 +152,11 @@
         "img_url": "blank.png"
     },
     {
+        "name": "Line",
+        "img_url": "line.jpg",
+        "new": true
+    },
+    {
         "name": "Liss",
         "img_url": "56.jpg"
     },
