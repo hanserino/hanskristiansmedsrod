@@ -71,7 +71,7 @@ h2{
     width: 100%;
     height: 100vh;
     position: relative;
-    border: 0px solid black;
+    border: 0px solid #333;
     border-width: 0 0 2px 0;
 
     overflow: hidden; /* skru av denne dersom video blir brukt */
@@ -88,7 +88,7 @@ h2{
     height: 100%;
     opacity: 0;
     opacity: .75;
-    background: black;
+    background: #333;
     transition: 1s opacity linear 2.5s;
 }
 .header::after{
@@ -99,7 +99,7 @@ h2{
     width: 100%;
     height: 2px;
     z-index: 3;
-    background: black;
+    background: #333;
 }
 
 .loaded .header::before{
@@ -179,7 +179,7 @@ h2{
 }
 .box{
     flex: 0 0 100%;
-    border: 0px solid black;
+    border: 0px solid #333;
     border-width: 2px 0;
     position: relative;
 }
@@ -203,7 +203,7 @@ h2{
 }
 
 .box.text p a:hover{
-    background: black;
+    background: #333;
     color: white;
 }
 
@@ -230,7 +230,7 @@ h2{
     bottom: .5rem;
     right: .5rem;
     max-width: calc(100% - 2rem);
-    background: black;
+    background: #333;
     color: white;
     padding: .5rem;
     opacity: 0;
@@ -241,7 +241,7 @@ h2{
 }
 .box.pic figcaption a:hover{
     background: white;
-    color: black;
+    color: #333;
 }
 
 .box.pic:hover figcaption{
@@ -259,7 +259,7 @@ h2{
 #medium-posts-container{
     position: relative;
     padding: 1rem .5rem;
-    border: 2px solid black;
+    border: 2px solid #333;
 }
 
 #medium-post-list-container {
@@ -293,7 +293,7 @@ h2{
     left: .15rem;
     top: .15rem;
     font-style: italic;
-    background: black;
+    background: #333;
     color: white;
     padding: .15rem;
     font-size: .5rem;
@@ -384,7 +384,7 @@ ul.spons-list{
     width: 100%;
     height: auto;
     padding: 1rem;
-    color: black;
+    color: #333;
 }
 .spons-list-item.blank .spons-promo {
     margin-top: 0
@@ -423,7 +423,7 @@ ul.spons-list{
 
 
 footer{
-    background: black;
+    background: #333;
     text-align: center;
     color: rgba(255,255,255,.75);
     padding: .5rem;
@@ -489,7 +489,7 @@ dd + dd {
     }
     .main{
         flex-direction: row;
-        border: 2px solid black;
+        border: 2px solid #333;
     }
     .header__title{
         padding: 2rem;
