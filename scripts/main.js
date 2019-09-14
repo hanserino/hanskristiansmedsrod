@@ -23,14 +23,6 @@ var historyTableBodyEl = document.getElementById("history-table-body");
 var agendaTableEl = document.getElementById("agenda-table");
 var agendaTableBodyEl = document.getElementById("agenda-table-body");
 
-var mediumPostsEl = document.getElementById('medium-posts-container');
-var mediumPostsTitleEl = document.getElementById('medium-posts-title');
-var mediumPostListContainerEl = document.getElementById('medium-post-list-container');
-
-var stravaStatsEl = document.getElementById('strava-stats');
-var stravaStatsTitleEl = document.getElementById('strava-stats-title');
-var stravaTextEl = document.getElementById('strava-text');
-
 var isTouchDevice = function () {
     return (
         !!(typeof window !== 'undefined' &&
@@ -111,68 +103,8 @@ function init() {
         console.log(error);
     });
 
-    /*fetch("https://www.strava.com/api/v3/athletes/10448277/stats?access_token=004c1253768c9e83f4ed64f2bad715436c35d1fb", {
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        }
-    }).then(function (response) {
-        return response.json().then(function (data) {
-            if (data.ytd_run_totals) {
 
-                stravaData = data.ytd_run_totals;
-                console.log(stravaData);
-
-                stravaStatsEl.dataset.fetchSuccess = true;
-                stravaStatsTitleEl.innerHTML = `Funfacts fra Strava`;
-
-                //Distance - meters
-                if (stravaData.distance) {
-                    var formattedDistance = kilometerFormatter(stravaData.distance, false);
-
-                    var earthComparison = kilometerFormatter(stravaData.distance, false) / funFacts.earthDiameter_km;
-                    var earthComparisonPercentage = Math.round(earthComparison*10);
-                    var earthComparisonFractionString = `<sup>1</sup>&frasl;<sub>${earthComparisonPercentage}</sub> `;                                            
-
-                    console.log('earth: ', funFacts.earthDiameter_km,  'hk: ', formattedDistance);
-
-                    stravaTextEl.innerHTML += `
-                    <p>
-                        Hittil i ${year} har jeg løpt <em>${formattedDistance} <abbr title="kilometer">km</abbr></em>, noe som tilsvarer ca. <em>${earthComparisonFractionString}</em> av jordas omkrets.
-                    </p>
-                    `;
-                }
-
-                //Moving time - hours
-                //Elevation gain - meters
-                if (stravaData.moving_time && stravaData.elevation_gain) {
-                    var formattedTime = Math.floor(stravaData.moving_time / 3600);
-                    var everestComparison = Math.round(stravaData.elevation_gain / funFacts.everestHeight_m * 10) / 10;
-
-                    stravaTextEl.innerHTML += `
-                    <p>
-                       Dette har jeg brukt <em>${formattedTime} timer</em> på. 
-                       Det er kanskje ikke kjempe-imponerende, men det er tross alt fordelt på <em>${stravaData.elevation_gain} akkumulerte høydemetere</em>. 
-                       Det vil si at jeg har besteget <em>Mount Everest ${everestComparison} ganger</em> fra havnivå.
-                    </p>
-                    <p>
-                        Det er ${remainingDays} dager igjen av året, så det er god tid til å pynte på årets statistikk.
-                    </p>
-                    `;
-                }
-
-            }
-            else {
-                console.log('no running stats');
-            }
-
-        });
-    }).catch(error => {
-        console.log(error);
-        stravaStatsEl.innerHTML = "";
-    });*/
-
-    fetch("https://exec.clay.run/nicoslepicos/medium-get-user-posts-new?profile=hanserino", {
+    /*fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hanserino", {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -180,13 +112,20 @@ function init() {
     }).then(function (response) {
         return response.json().then(function (data) {
             mediumPosts.data = data;
+            console.log(mediumPosts.data.items);
+
+
+            for (var i = 0; i < mediumPosts.data.items; i++) {
+                console.log(mediumPosts.data.items[i]);
+            }
 
             mediumPostsEl.dataset.fetchSuccess = true;
 
-            for (var key in mediumPosts.data.posts) {
-                if (mediumPosts.data.posts.hasOwnProperty(key)) {
-                    var postPath = mediumPosts.data.posts[key];
 
+            for (var key in mediumPosts.data.items) {
+
+                if (mediumPosts.data.items.hasOwnProperty(key)) {
+                    var postPath = mediumPosts.data.posts[key];
                     var titleEl = "",
                         subTitleEl = "",
                         publishedDateEl = "",
@@ -229,7 +168,56 @@ function init() {
     }).catch(error => {
         console.log(error);
     });
+*/
 
+var mediumPostsEl = document.getElementById('medium-posts-container');
+var mediumPostsTitleEl = document.getElementById('medium-posts-title');
+var mediumPostListContainerEl = document.getElementById('medium-post-list-container');
+
+fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hanserino')
+   .then((res) => res.json())
+   .then((data) => {
+        mediumPostsEl.dataset.fetchSuccess = true;
+
+      // Filter for acctual posts. Comments don't have categories, therefore can filter for items with categories bigger than 0
+      const res = data.items //This is an array with the content. No feed, no info about author etc..
+      const posts = res.filter(item => item.categories.length > 0) // That's the main trick* !
+
+      // Functions to create a short text out of whole blog's content
+      function toText(node) {
+         let tag = document.createElement('div')
+         tag.innerHTML = node
+         node = tag.innerText
+         return node
+      }
+      function shortenText(text,startingPoint ,maxLength) {
+         return text.length > maxLength?
+         text.slice(startingPoint, maxLength):
+         text
+      }
+
+      // Put things in right spots of markup
+      let output = '';
+      posts.forEach((item) => {
+            console.log(item)
+            let publishedDate = moment(shortenText(item.pubDate,0 ,10)).locale('nb').format('Do MMMM YYYY');
+            console.log(publishedDate);
+            output += `
+            <li>
+                <a href="${item.link}">
+                <div>
+                        <span class="medium-article-date">${publishedDate}</span>
+                        <img class="medium-article-thumb" src="${item.thumbnail}" alt="">
+                    </div>
+                    <div>
+                        <h3 class="medium-article-title">${item.title}</h3>
+                        <p class="medium-article-subtitle">${shortenText(toText(item.content),0, 300)+ '...'}</p>
+                    </div>
+                <a/>
+            </li>`
+      })
+      mediumPostListContainerEl.innerHTML = output
+})
     var touchClass = isTouchDevice() ? "touch" : "no-touch";
     document.body.classList.add(touchClass);
 }

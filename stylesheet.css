@@ -47,10 +47,11 @@ img{
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    color: #333;
 }
 
 h1, h2 {
-    font-family: 'Bangers', cursive;    
+    font-family: 'Bangers', cursive;
 }
 h1{
     font-size: 4.5rem;
@@ -156,13 +157,13 @@ h2{
     transition-delay: 1.5s;
 }
 .loaded .header__socials a {
-    color: black;
+    color: rgba(255,255,255,.8);
 }
 .loaded.no-touch .header__socials a:hover {
-    background: rgba(255,255,255,.5)
+    background: rgba(255,255,255,.3);
+    color: rgba(255,255,255,1);
 }
 
-.header__video,
 .header__image {
     width: 100%; 
     height: 100%;
@@ -330,9 +331,9 @@ table td, table th {
     padding: .25rem .4rem;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even){background-color: #f7f7f7;}
 
-table tr:hover {background-color: #ddd;}
+table tr:hover {background-color: #e6e6e6;}
 
 table thead th{
     position: sticky;
@@ -341,7 +342,7 @@ table thead th{
 table th {
     text-align: left;
     background-color: yellow;
-    color: black;
+    color: #333333;
     font-weight: bold;
 }
 
@@ -514,9 +515,6 @@ dd + dd {
         height: 100%;
         object-fit: cover;
     }
-
-    /*.box:nth-of-type(3){order: 4;}
-    .box:nth-of-type(3){order: 4;}*/
 
 }
 
