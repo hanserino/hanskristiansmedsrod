@@ -42,7 +42,7 @@
                 vertical-align: baseline;
             }
 
-            html {
+            html,* {
                 box-sizing: border-box;
                 font-size: 100%;
             }
@@ -99,7 +99,7 @@
 
             .new-badge{
                 position: absolute;
-                bottom: .25rem;
+                top: .25rem;
                 right: .25rem;
                 background: red;
                 color: white;
@@ -109,8 +109,8 @@
                 line-height: 1rem;
                 text-transform: uppercase;
                 border-radius: 50%;
-                width: 1rem;
-                height: 1rem;
+                width: 1.25rem;
+                height: 1.25rem;
             }
             .active .new-badge {
                 display: none;
@@ -262,8 +262,34 @@
                 width: 80%;
                 margin: 2rem auto;
             }
-            @media (min-width: 650px){
 
+            .honnold-badge {
+                position: absolute;
+                bottom: 2px;
+                left: 2px;
+                width: 90%;
+                height: auto;
+                padding: 2px;
+                background: rgba(0,0,0,.75);
+            }
+            [data-honnold="true"]{
+                border: 2px solid yellow;
+            }
+
+            .active [data-honnold="true"]{
+                border: none;
+            }
+
+            .active .honnold-badge {
+                width: 150px;
+                top: 1rem;
+                left: 1rem;
+            }
+
+            @media (min-width: 650px){
+                .active .honnold-badge {
+                    width: 200px;
+                }
                 li.active {
                     background: white;
                 }
@@ -309,15 +335,22 @@
         <script>
 
             var patrons = {};
-            function renderPic(inc, name, picName, isNew) {
-                var newHtml = "";
+            function renderPic(inc, name, picName, isNew, isHonnold) {
+                var newHtml = " ",
+                    honnoldHtml = " ";
+                    
                 if (isNew) {
                     newHtml = `<span class="new-badge">Ny!</span>`;
                 }
-                var picHtml = `<li onclick="setActive(this, ${inc})" title="${name}" class="patrons__patron" data-new="${isNew}">
+                if (isHonnold) {
+                    honnoldHtml = `<img class="honnold-badge" src="../media/patronPics/honnold.png" alt="honnold foundation logo" />`;
+                }
+
+                var picHtml = `<li onclick="setActive(this, ${inc})" title="${name}" class="patrons__patron" data-new="${isNew}" data-honnold="${isHonnold}">
                                 <img class="patron-pic" src="../media/patronPics/${picName}">
                                 <span class="patron-name">${name}</span>
                                 ${newHtml}
+                                ${honnoldHtml}
                             </li>`;
                 return picHtml;
             }
@@ -343,12 +376,13 @@
                     return response.json().then(function (data) {
                         patrons = data;
                         console.log(patrons);
-                        let newBadge = false;
+                        let newBadge, honnoldBadge = false;
 
                         for (var i = 0; i < patrons.length; i++) {
                             newBadge = patrons[i].new;
+                            honnoldBadge = patrons[i].honnold;
 
-                            patronsEl.innerHTML += renderPic(i, patrons[i].name, patrons[i].img_url, newBadge);
+                            patronsEl.innerHTML += renderPic(i, patrons[i].name, patrons[i].img_url, newBadge, honnoldBadge);
                         }
                     });
                 }).catch(error => {

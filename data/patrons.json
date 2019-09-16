@@ -201,6 +201,12 @@
         "img_url": "19.jpg"
     },
     {
+        "name": "Matias",
+        "img_url": "matias.png",
+        "honnold": true,
+        "new": true
+    },
+    {
         "name": "Monika",
         "img_url": "51.jpg"
     },
@@ -246,7 +252,8 @@
     },
     {
         "name": "Ruben",
-        "img_url": "43.jpg"
+        "img_url": "43.jpg",
+        "honnold": true
     },
     {
         "name": "Rudi",
