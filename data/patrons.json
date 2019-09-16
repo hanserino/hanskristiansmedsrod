@@ -321,6 +321,11 @@
         "img_url": "trym.jpg"
     },
     {
+        "name": "Trygve",
+        "img_url": "blank.png",
+        "new": true
+    },
+    {
         "name": "Tyler",
         "img_url": "59.jpg"
     },
