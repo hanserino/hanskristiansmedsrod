@@ -9,7 +9,7 @@
     },
     {
         "name": "Annette",
-        "img_url": "blank.png"
+        "img_url": "annette.png"
     },
     {
         "name": "Anita",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Inger",
-        "img_url": "blank.png"
+        "img_url": "inger.png"
     },
     {
         "name": "Janne",
@@ -149,7 +149,7 @@
     },
     {
         "name": "Kristian",
-        "img_url": "blank.png"
+        "img_url": "kristian.png"
     },
     {
         "name": "Line",
@@ -165,12 +165,12 @@
         "img_url": "16.jpg"
     },
     {
-        "name": "Magnus",
+        "name": "Magnus M",
         "img_url": "magnus.jpg"
     },
     {
-        "name": "Magnus",
-        "img_url": "blank.png"
+        "name": "Magnus F",
+        "img_url": "magnus_f.png"
     },
     {
         "name": "Mads",
