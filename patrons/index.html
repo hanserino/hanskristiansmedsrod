@@ -59,7 +59,7 @@
                 font-family: 'Bangers', cursive;    
             }
 
-            .title {
+            #title {
                 display: block;
                 width: 100%;
                 font-size: 2rem;
@@ -321,7 +321,7 @@
         </a>
 
         <div class="wrapper">
-            <h1 class="title">Patreon Wall Of Fame</h1>
+            <h1 id="title">Patreon Wall Of Fame</h1>
             <ul id="patrons"></ul>
         </div>
 
@@ -337,6 +337,7 @@
         <script>
 
             var patrons = {};
+            var titleEl = document.getElementById('title');
             function renderPic(inc, name, picName, isNew, isHonnold) {
                 var newHtml = " ",
                     honnoldHtml = " ";
@@ -362,6 +363,8 @@
                 let allElements = Array.from(siblings)
 
                 console.log(i);
+
+                titleEl.innerHTML = "Stolt sponsor";
 
                 for (let element of allElements) {
                     element.classList.remove('active')
