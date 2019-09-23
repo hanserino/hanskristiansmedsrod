@@ -288,6 +288,14 @@
                 left: 1rem;
             }
 
+            .crazy-btn{
+                position: relative;
+            }
+            .crazy-btn-wrapper{
+                border: 1px solid;
+                display: inline-block;
+            }
+
             @media (min-width: 650px){
                 .active .honnold-badge {
                     width: 200px;
@@ -312,6 +320,14 @@
                 }
             }
 
+            [data-crazy="true"]{
+                border: 10px solid red;
+            }
+            [data-crazy="true"] li{
+                position: absolute;
+                
+            }
+
         </style>
     </head>
 
@@ -324,6 +340,12 @@
             <h1 id="title">Patreon Wall Of Fame</h1>
             <ul id="patrons"></ul>
         </div>
+
+        <div class="crazy-btn-wrapper">
+            <label for="crazy-check">Crazy mode</label>
+            <input type="checkbox" id="crazy-check" onclick="crazyMode()">
+        </div>
+        
 
         <div class="join">
             <p>Disse menneskene støtter <abbr title="Hans Kristian">HK</abbr> og <abbr title="Nå Er Det Alvor">NEDA</abbr> med $10 eller mer via Patreon-siden til podcasten.</p>
@@ -372,6 +394,11 @@
 
                 el.classList.add("active");
 
+            }
+
+            function crazyMode (){
+                var checkBox = document.getElementById("crazy-check");
+                document.body.setAttribute('data-crazy', checkBox.checked);
             }
         
             window.addEventListener('load', function () {
