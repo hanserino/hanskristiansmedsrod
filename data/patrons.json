@@ -227,6 +227,11 @@
         "img_url": "1.jpg"
     },
     {
+        "name": "Ragnar",
+        "img_url": "ragnar.jpg",
+        "new": true
+    },
+    {
         "name": "Reidun",
         "img_url": "22.jpg"
     },
