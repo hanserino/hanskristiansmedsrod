@@ -347,7 +347,8 @@
     },
     {
         "name": "Vegard AJ",
-        "img_url": "blank.png"
+        "img_url": "blank.png",
+        "new": true
     },
     {
         "name": "Øivind",
