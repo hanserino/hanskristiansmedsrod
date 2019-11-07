@@ -65,6 +65,11 @@
         "img_url": "3.jpg"
     },
     {
+        "name": "Christian R",
+        "img_url": "blank.jpg",
+        "new": true
+    },
+    {
         "name": "Erling",
         "img_url": "erling.jpg"   
     },
