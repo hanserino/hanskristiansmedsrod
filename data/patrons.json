@@ -25,7 +25,8 @@
     },
     {
         "name": "Arvid",
-        "img_url": "arvid.jpeg"
+        "img_url": "arvid.jpeg",
+        "honnold": true
     },
     {
         "name": "Asgeir",
@@ -289,10 +290,6 @@
         "img_url": "sondre.jpg"
     },
     {
-        "name": "Stian",
-        "img_url": "stian.jpg"
-    },
-    {
         "name": "Tarjei",
         "img_url": "28.jpg"
     },
@@ -311,10 +308,6 @@
     {
         "name": "Thor-Erik",
         "img_url": "2.jpg"
-    },
-    {
-        "name": "Tor Christian",
-        "img_url": "54.jpg"
     },
     {
         "name": "Travålta",
