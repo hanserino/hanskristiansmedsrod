@@ -36,12 +36,6 @@
         "description": "12. plass Glen Coe Skyline"
     },
     {
-        "date": "14.10.2017",
-        "category": "Race",
-        "location": "Nordmarka, Oslo, Norge",
-        "description": "5. plass Ivar Formos Minneløp 17km"
-    },
-    {
         "date": "15.10.2017",
         "category": "Sammenlagt",
         "location": "",
@@ -100,5 +94,11 @@
         "category": "Stage Race",
         "location": "Graächen, Sveits",
         "description": "2. plass sammenlagt Ultra Tour Monte Rosa 4 Stage"
+    },
+    {
+        "date": "11.11.2019",
+        "category": "Stage Race",
+        "location": "Solukhumbu, Nepal",
+        "description": "3. plass sammenlagt Everest Trail Race"
     }
 ]
