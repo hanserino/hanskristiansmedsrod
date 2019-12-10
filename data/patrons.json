@@ -66,7 +66,7 @@
     },
     {
         "name": "Christian R",
-        "img_url": "blank.jpg",
+        "img_url": "blank.png",
         "new": true
     },
     {
@@ -80,10 +80,6 @@
     {
         "name": "Fredrik",
         "img_url": "45.jpg"
-    },
-    {
-        "name": "Geir Morten",
-        "img_url": "58.jpg"
     },
     {
         "name": "Gorm",
@@ -112,6 +108,11 @@
     {
         "name": "Inger",
         "img_url": "inger.png"
+    },
+    {
+        "name": "Ingrid",
+        "img_url": "blank.png",
+        "new": true
     },
     {
         "name": "Janne",
@@ -311,10 +312,6 @@
     {
         "name": "Travålta",
         "img_url": "travalta.jpg"
-    },
-    {
-        "name": "Trym",
-        "img_url": "trym.jpg"
     },
     {
         "name": "Trygve",
