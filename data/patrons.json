@@ -90,6 +90,11 @@
         "img_url": "gunnar.jpg"
     },
     {
+        "name": "Gøran",
+        "img_url": "goran.jpg",
+        "new": true
+    },
+    {
         "name": "Håkon",
         "img_url": "55.jpg"
     },
@@ -351,6 +356,11 @@
     {
         "name": "Øyvind B",
         "img_url": "oyvind_b.jpg"
+    },
+    {
+        "name": "Øyvind S",
+        "img_url": "oyvind_s.jpg",
+        "new": true
     },
     {
         "name": "Anonymous",
