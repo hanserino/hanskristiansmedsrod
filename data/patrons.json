@@ -70,6 +70,11 @@
         "new": true
     },
     {
+        "name": "Eline",
+        "img_url": "eline.jpg",
+        "new": true 
+    },
+    {
         "name": "Erling",
         "img_url": "erling.jpg"   
     },
@@ -346,11 +351,11 @@
         "new": true
     },
     {
-        "name": "Øivind",
+        "name": "Øivind C",
         "img_url": "oivind.jpeg"
     },
     {
-        "name": "Øyvind",
+        "name": "Øyvind L",
         "img_url": "oyvind.jpg"
     },
     {
