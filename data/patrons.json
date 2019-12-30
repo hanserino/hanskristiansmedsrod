@@ -149,6 +149,11 @@
         "img_url": "14.jpg"
     },
     {
+        "name": "Kaja",
+        "img_url": "kaja.jpg",
+        "new": true
+    },
+    {
         "name": "Kenneth",
         "img_url": "15.jpg"
     },
