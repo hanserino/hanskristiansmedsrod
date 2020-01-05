@@ -1,81 +1,25 @@
 [
     {
-        "date": "08.01.2019",
+        "date": "18.01.2020",
         "category": "Treningsleir",
         "distance": "",
         "gain": "0m",
         "description": "Treningsleir. Tejeda, Gran Canaria, Spania",
-        "url": "https://sondreamdahl.com/inspirasjon/"
+        "url": "https://kompasstrails.com/all-trips/"
     },
     {
-        "date": "16.02.2019",
+        "date": "08.05.2019",
         "category": "Race",
-        "distance": "50km",
-        "gain": "0m",
-        "description": "Bislett 50km, Oslo, Norge",
-        "url": "https://www.bislettstadion.no/bislett-alliansen/arrangementer/bislett-50km/"
-    },
-    {
-        "date": "21.04.2019",
-        "category": "Race",
-        "distance": "31km",
-        "gain": "+2000m",
-        "description": "Mt Awa Skyrace, Sanjō, Japan",
-        "url": "https://www.mtawaverticalkirometer.com/home-1"
-    },
-    {
-        "date": "11.05.2019",
-        "category": "Race",
-        "description": "SuperSky: Transvulcania, La Palma, Spania",
+        "description": "Transvulcania, La Palma, Spania",
         "url": "http://transvulcania.es/?lang=en"
     },
     {
-        "date": "09.06.2019",
-        "category": "Race",
-        "distance": "44km",
-        "gain": "+2100m",
-        "description": "VM Ultra Trail: Ultra Trilhos Dos Abutres, Portugal",
-        "url": "http://trilhos.abutres.net/en"
-    },
-    {
-        "date": "14.07.2019",
-        "category": "Race",
-        "distance": "42km",
-        "gain": "+3325m",
-        "description": "SuperSky: Buff Epic Trail, Barruera, Spania",
-        "url": "http://www.buffepictrail.com/"
-    },
-    {
-        "date": "28.07.2019",
-        "category": "Race",
-        "distance": "21km",
-        "gain": "+2300m",
-        "description": "Skyrace Comapedrosa, Arinsal, Andorra",
-        "url": "http://skyracecomapedrosa.com/en/skyrace-comapedrosa-151/"
-    },
-    {
-        "date": "15.09.2019",
-        "category": "Race",
-        "distance": "170km",
-        "gain": "+11300m",
-        "description": "UTMR - Ultra Tour Monte Rosa",
-        "url": "https://www.ultratourmonterosa.com/4-stage-race-info/"
-    },
-    {
-        "date": "07.11.2019",
-        "category": "Race",
-        "distance": "170km",
-        "gain": "+26000m",
-        "description": "Everest Trail Race, Nepal",
-        "url": "http://everesttrailrace.com"
-    },
-    {
-        "date": "En gang i livet",
-        "category": "FKT-forsøk",
+        "date": "Sommeren 2019",
+        "category": "Rekordforsøk",
         "location": "Kvaløya, Tromsø, Norge",
         "distance": "",
         "gain": "",
-        "description": "Rekordforsøk: Ersfjordtraversen. Time to beat: 4:49'30",
+        "description": "Rekordforsøk: Ersfjordtraversen, Kvaløya, Tromsø",
         "url": "http://kugo.no/2014/08/ersfjordtraversen/"
     }
 ]
