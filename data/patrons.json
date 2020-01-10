@@ -8,12 +8,14 @@
         "img_url": "57.jpg"
     },
     {
-        "name": "Annette",
-        "img_url": "annette.png"
+        "name": "Amund",
+        "img_url": "amund.jpg",
+        "new": true,
+        "honnold": true
     },
     {
-        "name": "Anita",
-        "img_url": "anita.jpg"
+        "name": "Annette",
+        "img_url": "annette.png"
     },
     {
         "name": "Andreas",
@@ -110,10 +112,6 @@
     {
         "name": "Ingvild",
         "img_url": "ingvild.jpg"
-    },
-    {
-        "name": "Iselin",
-        "img_url": "10.jpg"
     },
     {
         "name": "Inger",
@@ -327,7 +325,11 @@
     },
     {
         "name": "Tone",
-        "img_url": "tone.jpg",
+        "img_url": "tone.jpg"
+    },
+    {
+        "name": "Torbjørn",
+        "img_url": "torbjorn.jpg",
         "new": true
     },
     {
