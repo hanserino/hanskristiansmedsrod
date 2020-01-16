@@ -234,8 +234,7 @@
     },
     {
         "name": "Ragnar",
-        "img_url": "ragnar.jpg",
-        "new": true
+        "img_url": "ragnar.jpg"
     },
     {
         "name": "Reidun",
@@ -329,7 +328,7 @@
     },
     {
         "name": "Torbjørn",
-        "img_url": "torbjorn.jpg",
+        "img_url": "torbjorn_b.png",
         "new": true
     },
     {
