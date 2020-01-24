@@ -387,13 +387,15 @@
 
                 console.log(i);
 
-                titleEl.innerHTML = "Stolt sponsor";
+                titleEl.innerHTML = "Stolt patreon";
 
                 for (let element of allElements) {
                     element.classList.remove('active')
                 }
 
                 el.classList.add("active");
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
             }
 
