@@ -359,8 +359,11 @@
         
         <script>
 
-            var patrons = {};
-            var titleEl = document.getElementById('title');
+            let patrons = {};
+            const titleEl = document.getElementById('title');
+            let siblings, allElements, activeElement;
+            let active;
+
             function renderPic(inc, name, picName, isNew, isHonnold) {
                 var newHtml = " ",
                     honnoldHtml = " ";
@@ -381,11 +384,12 @@
                 return picHtml;
             }
 
-            function setActive(el, i){
-                var siblings = el.parentNode.children;
-                let allElements = Array.from(siblings)
+            function setActive(el, siblings, i){
+                activeElement = el;
+                siblings = activeElement.parentNode.children;
+                allElements = Array.from(siblings);
 
-                console.log(i);
+                active = i;
 
                 titleEl.innerHTML = "Stolt patreon";
 
@@ -394,10 +398,20 @@
                 }
 
                 el.classList.add("active");
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
 
             }
+
+            document.addEventListener('keyup', (e) => {
+                if (e.code === "ArrowRight"){
+                    setActive(activeElement.nextSibling, active+1);
+                }
+                else if (e.code === "ArrowLeft") {
+                    setActive(activeElement.previousSibling, active-1);
+                }
+            });
+
 
             function crazyMode (){
                 var checkBox = document.getElementById("crazy-check");
