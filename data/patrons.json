@@ -67,9 +67,18 @@
         "img_url": "3.jpg"
     },
     {
-        "name": "Christian R",
-        "img_url": "blank.png",
+        "name": "Christian A",
+        "img_url": "christian_a.jpg",
         "new": true
+    },
+    {
+        "name": "Christian R",
+        "img_url": "christian_r.jpg",
+        "new": true
+    },
+    {
+        "name": "Christian F R",
+        "img_url": "blank.png"
     },
     {
         "name": "Eline",
