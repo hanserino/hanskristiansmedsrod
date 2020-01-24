@@ -3,15 +3,15 @@
         "date": "18.01.2020",
         "category": "Treningsleir",
         "distance": "",
-        "gain": "0m",
+        "gain": "0m d+",
         "description": "Treningsleir. Tejeda, Gran Canaria, Spania",
         "url": "https://kompasstrails.com/all-trips/"
     },
     {
-        "date": "08.05.2020",
-        "category": "Race",
-        "description": "Transvulcania, La Palma, Spania",
-        "url": "http://transvulcania.es/?lang=en"
+        "date": "24.04.2020",
+        "category": "Ultra",
+        "description": "Ultra-Trail Mt. Fuji 165km, Japan",
+        "url": "https://www.ultratrailmtfuji.com/en/"
     },
     {
         "date": "Sommeren 2020",
@@ -21,5 +21,14 @@
         "gain": "",
         "description": "Rekordforsøk: Ersfjordtraversen, Kvaløya, Tromsø",
         "url": "http://kugo.no/2014/08/ersfjordtraversen/"
+    },
+    {
+        "date": "Sommeren 2020",
+        "category": "Skyrace",
+        "location": "Val Masino, Sondrio, Italia",
+        "distance": "52km",
+        "gain": "4200m d+",
+        "description": "Legendarisk skyrace",
+        "url": "https://www.trofeokima.org/?lang=en"
     }
 ]

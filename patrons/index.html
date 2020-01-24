@@ -82,7 +82,9 @@
                 list-style: none;
                 padding: 0;
                 display: flex;
+                flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 margin: 0 auto;
                 position: relative;
             }
@@ -90,13 +92,14 @@
             li{
                 width: 10%;
                 height: auto;
-                margin: 0;
                 padding: 0;
                 transition: .25s opacity ease 0;
                 opacity: 1;
                 order: 2;
                 position: relative;
                 cursor: pointer;
+                width: calc(1/10*100% - (1 - 1/10)*2px);
+                margin-bottom: 2px;
             }
 
             .new-badge{
@@ -119,7 +122,7 @@
             }
 
             ul:hover li:not(.active){
-                opacity: .5;
+                opacity: .75;
             }
 
             ul:hover li:hover{
@@ -302,6 +305,8 @@
                 }
                 li.active {
                     background: black;
+                    border: none;
+                    margin-bottom: 2px;
                 }
 
                 li.active .patron-name {

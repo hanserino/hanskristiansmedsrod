@@ -293,7 +293,8 @@
     },
     {
         "name": "Simen H",
-        "img_url": "simen_h.jpg"
+        "img_url": "simen_h.jpg",
+        "new": true
     },
     {
         "name": "Sondre A",
