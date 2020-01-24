@@ -389,7 +389,7 @@
                 return picHtml;
             }
 
-            function setActive(el, siblings, i){
+            function setActive(el, i){
                 activeElement = el;
                 siblings = activeElement.parentNode.children;
                 allElements = Array.from(siblings);
@@ -405,14 +405,16 @@
                 el.classList.add("active");
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
-
+                console.log(active);
             }
 
             document.addEventListener('keyup', (e) => {
-                if (e.code === "ArrowRight"){
+                console.log(active, allElements.length);
+
+                if ( (e.code === "ArrowRight") && (active!=allElements.length-1) ){
                     setActive(activeElement.nextSibling, active+1);
                 }
-                else if (e.code === "ArrowLeft") {
+                else if ( (e.code === "ArrowLeft") && active!=0) {
                     setActive(activeElement.previousSibling, active-1);
                 }
             });
