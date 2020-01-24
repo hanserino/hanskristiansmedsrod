@@ -4,6 +4,10 @@
         "img_url": "44.jpg"
     },
     {
+        "name": "Alexander",
+        "img_url": "alexander.jpg"
+    },
+    {
         "name": "Amir",
         "img_url": "57.jpg"
     },
@@ -14,37 +18,33 @@
         "honnold": true
     },
     {
+        "name": "Anders A P",
+        "img_url": "anders_a_p.jpg"
+    },
+    {
+        "name": "Andreas S",
+        "img_url": "blank.png"        
+    },
+    {
         "name": "Annette",
         "img_url": "annette.png"
     },
     {
-        "name": "Andreas",
-        "img_url": "blank.png"        
-    },
-    {
-        "name": "Arthur",
+        "name": "Arthur M",
         "img_url": "arthur.jpg"
     },
     {
-        "name": "Arvid",
+        "name": "Arvid R",
         "img_url": "arvid.jpeg",
         "honnold": true
     },
     {
-        "name": "Asgeir",
+        "name": "Asgeir H",
         "img_url": "7.jpg"
-    },
-    {
-        "name": "Atle",
-        "img_url": "8.jpg"
     },
     {
         "name": "Bernt",
         "img_url": "41.jpg"
-    },
-    {
-        "name": "Benjamin",
-        "img_url": "blank.png"        
     },
     {
         "name": "Bilal",
@@ -59,8 +59,12 @@
         "img_url": "49.jpg"
     },
     {
-        "name": "Bård H",
+        "name": "Bård H S",
         "img_url": "50.jpg"
+    },
+    {
+        "name": "Caoimh",
+        "img_url": "caoimh.jpg"
     },
     {
         "name": "Christel",
@@ -68,8 +72,7 @@
     },
     {
         "name": "Christian A",
-        "img_url": "christian_a.jpg",
-        "new": true
+        "img_url": "christian_a.jpg"
     },
     {
         "name": "Christian R",
@@ -90,25 +93,28 @@
         "img_url": "erling.jpg"   
     },
     {
-        "name": "Fred",
+        "name": "Fred A",
         "img_url": "9.jpg"
     },
     {
-        "name": "Fredrik",
-        "img_url": "45.jpg"
+        "name": "Geir J",
+        "img_url": "blank.png"
     },
     {
-        "name": "Gorm",
+        "name": "Gorm S",
         "img_url": "37.jpg"
     },
     {
-        "name": "Gunnar",
+        "name": "Gunnar B",
         "img_url": "gunnar.jpg"
     },
     {
         "name": "Gøran",
-        "img_url": "goran.jpg",
-        "new": true
+        "img_url": "goran.jpg"
+    },
+    {
+        "name": "Hallvard S",
+        "img_url": "hallvard_s.jpg"
     },
     {
         "name": "Håkon",
@@ -116,11 +122,7 @@
     },
     {
         "name": "I Am Speed",
-        "img_url": "blank.png"
-    },
-    {
-        "name": "Ingvild",
-        "img_url": "ingvild.jpg"
+        "img_url": "iamspeed.jpg"
     },
     {
         "name": "Inger",
@@ -128,8 +130,15 @@
     },
     {
         "name": "Ingrid",
-        "img_url": "blank.png",
-        "new": true
+        "img_url": "ingrid.jpg"
+    },
+    {
+        "name": "Ingvild G",
+        "img_url": "ingvild.jpg"
+    },
+    {
+        "name": "Jeffrey S",
+        "img_url": "blank.png"
     },
     {
         "name": "Jenny",
@@ -140,19 +149,27 @@
         "img_url": "46.jpg"
     },
     {
-        "name": "Jonas",
+        "name": "Johannes G",
         "img_url": "blank.png"
     },
     {
-        "name": "Johannes",
+        "name": "Johannes R",
         "img_url": "13.jpg"
+    },
+    {
+        "name": "Jon Atle",
+        "img_url": "jon_atle.jpg"
+    },
+    {
+        "name": "Jonas B",
+        "img_url": "jonas_bye.jpg"
     },
     {
         "name": "Jørgen",
         "img_url": "14.jpg"
     },
     {
-        "name": "Kaja",
+        "name": "Kaja K",
         "img_url": "kaja.jpg",
         "new": true
     },
@@ -161,60 +178,44 @@
         "img_url": "15.jpg"
     },
     {
+        "name": "Kim André",
+        "img_url": "kim.jpg"
+    },
+    {
         "name": "Knut Einar",
         "img_url": "knut.jpg"
     },
     {
-        "name": "Kim",
-        "img_url": "kim.jpg"
-    },
-    {
-        "name": "Kristian",
+        "name": "Kristian H",
         "img_url": "kristian.png"
     },
-    {
-        "name": "Line",
-        "img_url": "line.jpg",
-        "new": true
-    },
+
     {
         "name": "Liss",
         "img_url": "56.jpg"
-    }, 
+    },
     {
         "name": "Liv-Anna",
         "img_url": "16.jpg"
-    },
-    {
-        "name": "Magnus M",
-        "img_url": "magnus.jpg"
     },
     {
         "name": "Magnus F",
         "img_url": "magnus_f.png"
     },
     {
-        "name": "Mads",
-        "img_url": "17.jpg"
+        "name": "Magnus M",
+        "img_url": "magnus.jpg"
     },
     {
-        "name": "Morten",
-        "img_url": "morten.jpg"
+        "name": "Margareth H M",
+        "img_url": "margareth_m.jpg"
     },
     {
-        "name": "Morten B",
-        "img_url": "morten_b.jpg"
-    },
-    {
-        "name": "Margareth",
-        "img_url": "53.jpg"
-    },
-    {
-        "name": "Marie",
+        "name": "Marie S",
         "img_url": "18.jpg"
     },
     {
-        "name": "Markus",
+        "name": "Markus B",
         "img_url": "6.jpg"
     },
     {
@@ -226,32 +227,32 @@
         "img_url": "51.jpg"
     },
     {
-        "name": "Nina",
-        "img_url": "blank.png"
+        "name": "Morten B",
+        "img_url": "morten_b.jpg"
     },
     {
-        "name": "Ola",
+        "name": "Morten R",
+        "img_url": "morten.jpg"
+    },
+    {
+        "name": "Nina N",
+        "img_url": "nina.jpg"
+    },
+    {
+        "name": "Ola S",
         "img_url": "20.jpg"
     },
     {
-        "name": "Olav",
+        "name": "Olav H",
         "img_url": "olav.jpg"
     },
     {
-        "name": "Ole-Anders",
-        "img_url": "21.jpg"
-    },
-    {
-        "name": "Ragnar",
+        "name": "Ragnar K",
         "img_url": "ragnar.jpg"
     },
     {
-        "name": "Reidun",
+        "name": "Reidun A",
         "img_url": "22.jpg"
-    },
-    {
-        "name": "Remi",
-        "img_url": "23.jpg"
     },
     {
         "name": "Remy",
@@ -266,13 +267,21 @@
         "img_url": "25.jpg"
     },
     {
-        "name": "Ruben",
+        "name": "Ruben E",
+        "img_url": "ruben_e.jpg"
+    },
+    {
+        "name": "Ruben H",
         "img_url": "43.jpg",
         "honnold": true
     },
     {
         "name": "Rudi",
         "img_url": "26.jpg"
+    },
+    {
+        "name": "Runar S",
+        "img_url": "runar_s.jpg"
     },
     {
         "name": "Sigrid",
@@ -283,11 +292,23 @@
         "img_url": "sigve.jpg"
     },
     {
+        "name": "Simen H",
+        "img_url": "simen_h.jpg"
+    },
+    {
+        "name": "Sondre A",
+        "img_url": "sondre.jpg"
+    },
+    {
         "name": "Stein Erik",
         "img_url": "38.jpg"
     },
     {
-        "name": "Ståle",
+        "name": "Stig H M",
+        "img_url": "stig.jpg"
+    },
+    {
+        "name": "Ståle N",
         "img_url": "27.jpg"
     },
     {
@@ -295,16 +316,16 @@
         "img_url": "39.jpg"
     },
     {
-        "name": "Sondre",
-        "img_url": "sondre.jpg"
-    },
-    {
-        "name": "Tarjei",
+        "name": "Tarjei U",
         "img_url": "28.jpg"
     },
     {
-        "name": "Terje",
+        "name": "Terje S",
         "img_url": "29.jpg"
+    },
+    {
+        "name": "Therese G",
+        "img_url": "therese.jpg"
     },
     {
         "name": "Thomas S",
@@ -315,55 +336,60 @@
         "img_url": "31.jpg"
     },
     {
-        "name": "Thor-Erik",
-        "img_url": "2.jpg"
+        "name": "Tone Ø",
+        "img_url": "tone.jpg"
+    },
+    {
+        "name": "Torbjørn",
+        "img_url": "torbjorn_b.png"
+    },
+    {
+        "name": "Torgeir",
+        "img_url": "torgeir.jpg"
     },
     {
         "name": "Travålta",
         "img_url": "travalta.jpg"
     },
     {
-        "name": "Trygve",
-        "img_url": "trygve.jpg",
-        "new": true
+        "name": "Truls L",
+        "img_url": "truls_l.jpg"
     },
     {
-        "name": "Tone",
-        "img_url": "tone.jpg"
+        "name": "Thor-Erik",
+        "img_url": "2.jpg"
     },
     {
-        "name": "Torbjørn",
-        "img_url": "torbjorn_b.png",
-        "new": true
+        "name": "Trygve U",
+        "img_url": "trygve.jpg"
     },
     {
         "name": "Tyler",
         "img_url": "59.jpg"
     },
     {
-        "name": "Unni",
+        "name": "Unni O",
         "img_url": "48.jpg"
+    },
+    {
+        "name": "Vegard A J",
+        "img_url": "blank.png"
     },
     {
         "name": "Vegard R",
         "img_url": "34.jpg"
     },
     {
-        "name": "Vegard AJ",
-        "img_url": "blank.png",
-        "new": true
-    },
-    {
         "name": "Øivind C",
         "img_url": "oivind.jpeg"
     },
     {
-        "name": "Øyvind L",
-        "img_url": "oyvind.jpg"
-    },
-    {
         "name": "Øyvind B",
         "img_url": "oyvind_b.jpg"
+    },
+    {
+        "name": "Øyvind L",
+        "img_url": "oyvind.jpg"
     },
     {
         "name": "Øyvind S",
