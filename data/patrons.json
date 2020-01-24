@@ -161,6 +161,11 @@
         "img_url": "jon_atle.jpg"
     },
     {
+        "name": "Jon-Kristian",
+        "img_url": "jon-kristian.jpg",
+        "new": true
+    },
+    {
         "name": "Jonas B",
         "img_url": "jonas_bye.jpg"
     },
