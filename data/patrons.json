@@ -163,6 +163,11 @@
     },
     {
         "name": "Jonas B",
+        "img_url": "blank2.png",
+        "new": true
+    },
+    {
+        "name": "Jone U",
         "img_url": "jonas_bye.jpg"
     },
     {
