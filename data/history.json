@@ -100,5 +100,11 @@
         "category": "Stage Race",
         "location": "Solukhumbu, Nepal",
         "description": "3. plass Everest Trail Race"
+    },
+    {
+        "date": "03.05.2020",
+        "category": "FKT (Fastest Known Time)",
+        "location": "El Chaltén, Argentina",
+        "description": "FKT på 75km lange Huemul Circuit"
     }
 ]

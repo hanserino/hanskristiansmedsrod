@@ -1,6 +1,6 @@
 [
     {
-        "date": "18.01.2020",
+        "date": "Januar 2021",
         "category": "Treningsleir",
         "distance": "",
         "gain": "0m d+",
@@ -8,27 +8,19 @@
         "url": "https://kompasstrails.com/all-trips/"
     },
     {
-        "date": "24.04.2020",
-        "category": "Ultra",
-        "description": "Ultra-Trail Mt. Fuji 165km, Japan",
-        "url": "https://www.ultratrailmtfuji.com/en/"
+        "date": "12.02.2021",
+        "category": "Race",
+        "distance": "100km",
+        "gain": "1250m d+",
+        "description": "Black Canyon Ultras 100k, Arizona, US",
+        "url": "https://aravaiparunning.com/network/blackcanyon/"
     },
     {
-        "date": "Sommeren 2020",
-        "category": "Rekordforsøk",
-        "location": "Kvaløya, Tromsø, Norge",
-        "distance": "",
-        "gain": "",
-        "description": "Rekordforsøk: Ersfjordtraversen, Kvaløya, Tromsø",
-        "url": "http://kugo.no/2014/08/ersfjordtraversen/"
-    },
-    {
-        "date": "30.08.2020",
-        "category": "Skyrace",
-        "location": "Val Masino, Sondrio, Italia",
-        "distance": "52km",
-        "gain": "4200m d+",
-        "description": "Trofeo KIMA",
-        "url": "https://www.trofeokima.org/?lang=en"
+        "date": "August 2021",
+        "category": "Race",
+        "distance": "57km",
+        "gain": "4500m d+",
+        "description": "Tromsø Skyrace Hamperokken",
+        "url": "https://kompasstrails.com/all-trips/"
     }
 ]
