@@ -1,26 +1,10 @@
 [
     {
-        "date": "Januar 2021",
-        "category": "Treningsleir",
-        "distance": "",
-        "gain": "0m d+",
-        "description": "Treningsleir. Tejeda, Gran Canaria, Spania",
-        "url": "https://kompasstrails.com/all-trips/"
-    },
-    {
-        "date": "12.02.2021",
-        "category": "Race",
-        "distance": "100km",
-        "gain": "1250m d+",
-        "description": "Black Canyon Ultras 100k, Arizona, US",
-        "url": "https://aravaiparunning.com/network/blackcanyon/"
-    },
-    {
         "date": "August 2021",
         "category": "Race",
-        "distance": "57km",
-        "gain": "4500m d+",
-        "description": "Tromsø Skyrace Hamperokken",
-        "url": "https://tromsoskyrace.com/"
+        "distance": "145km",
+        "gain": "9100m D+",
+        "description": "TDS",
+        "url": "https://utmbmontblanc.com/en/page/22/tds"
     }
 ]
