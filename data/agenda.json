@@ -1,10 +1,18 @@
 [
-    {
-        "date": "24.08.2021",
-        "category": "Race",
-        "distance": "145km",
-        "gain": "9100m D+",
-        "description": "TDS",
-        "url": "https://utmbmontblanc.com/en/page/22/tds"
-    }
+  {
+    "date": "11.06.2021",
+    "category": "Race",
+    "distance": "100km",
+    "gain": "3250m D+",
+    "description": "Nøsen Hundreds",
+    "url": "https://www.trailnordic.com/"
+  },
+  {
+    "date": "24.08.2021",
+    "category": "Race",
+    "distance": "145km",
+    "gain": "9100m D+",
+    "description": "TDS",
+    "url": "https://utmbmontblanc.com/en/page/22/tds"
+  }
 ]
