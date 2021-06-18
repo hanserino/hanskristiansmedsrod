@@ -106,5 +106,11 @@
         "category": "FKT (Fastest Known Time)",
         "location": "El Chaltén, Argentina",
         "description": "FKT på 75km lange Huemul Circuit i Patagonia"
+    },
+    {
+        "date": "12.06.2021",
+        "category": "Race",
+        "location": "Valdres, Norge",
+        "description": "4. plass Nøsen Hundreds"
     }
 ]
