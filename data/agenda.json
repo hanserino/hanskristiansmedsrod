@@ -1,18 +1,18 @@
 [
   {
-    "date": "12.06.2021",
+    "date": "26.08.2022",
     "category": "Race",
     "distance": "100km",
-    "gain": "3250m D+",
-    "description": "Nøsen Hundreds",
-    "url": "https://www.trailnordic.com/"
+    "gain": "6100m D+",
+    "description": "CCC",
+    "url": "https://utmbmontblanc.com/en/page/21/21.html"
   },
   {
-    "date": "24.08.2021",
-    "category": "Race",
-    "distance": "145km",
-    "gain": "9100m D+",
-    "description": "TDS",
-    "url": "https://utmbmontblanc.com/en/page/22/tds"
+    "date": "15.07.2022",
+    "category": "FKT",
+    "distance": "50km",
+    "gain": "4000m D+",
+    "description": "Blåmann - Tromsdalstinden - Hamperokken",
+    "url": ""
   }
 ]
