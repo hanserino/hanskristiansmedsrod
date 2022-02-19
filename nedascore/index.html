@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEDA Score Kalkulator</title>
+</head>
+<body>
+    <form id="nedascore" oninput="
+        sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)
+    ">
+        <div>
+            <p>Hva er persen din på mila?</p>
+            <div>
+                <label for="minutter">Minutter</label>
+                <input type="number" id="minutter">
+            </div>
+            <div>
+                <label for="sekunder">Sekunder</label>
+                <input type="number" id="sekunder">
+            </div>
+        </div>
+
+        <div>
+            <label for="klatrepers">Hva er din klatrepers?</label>
+
+            <select name="klatrepers" id="klatrepers">
+                <option disabled selected>Fransk grad på led</option>
+                <option value="5.0">5a</option>
+                <option value="5.16">5a+</option>
+                <option value="5.33">5b</option>
+                <option value="5.5">5b+</option>
+                <option value="5.66">5c</option>
+                <option value="5.83">5c+</option>
+                <option value="6.0">6a</option>
+                <option value="6.16">6a+</option>
+                <option value="6.33">6b</option>
+                <option value="6.5">6b+</option>
+                <option value="6.66">6c</option>
+                <option value="6.83">6c+</option>
+                <option value="7.0">7a</option>
+                <option value="7.16">7a+</option>
+                <option value="7.33">7b</option>
+                <option value="7.5">7b+</option>
+                <option value="7.66">7c</option>
+                <option value="7.83">7c+</option>
+                <option value="8.0">8a</option>
+                <option value="8.16">8a+</option>
+                <option value="8.33">8b</option>
+                <option value="8.5">8b+</option>
+                <option value="8.66">8c</option>
+                <option value="8.83">8c+</option>
+                <option value="9.0">9a</option>
+                <option value="9.16">9a+</option>
+                <option value="9.33">9b</option>
+                <option value="9.5">9b+</option>
+                <option value="9.66">9c</option>
+            </select>
+        </div>
+        <output name="sumresult" for="minutter sekunder klatrepers"></output>
+    </form>
+
+    <script>
+        
+    </script>
+</body>
+</html>
