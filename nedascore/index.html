@@ -4,65 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
     <title>NEDA Score Kalkulator</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        body {
+            background-color: #fffffe;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        label {
+            display: block;
+        }
+        form > div {
+            margin: 2rem;
+        }
+        input, select {
+            padding: .25rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .run {
+            
+        }
+
+        .run > div {
+            display: inline-block;
+        }
+
+        select {
+           width: 240px;
+        }
+
+        output {
+            display: block;
+            font-size: 2rem;
+        }
+
+        output::before {
+            content: "Din NEDA Score: ";
+        }
+        h1 {
+            font-size: 4rem;
+        }
+
+    </style>
 </head>
 <body>
-    <form id="nedascore" oninput="
-        sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)
-    ">
-        <div>
-            <p>Hva er persen din på mila?</p>
-            <div>
-                <label for="minutter">Minutter</label>
-                <input type="number" id="minutter">
+    <main>
+        <h1>🏃 + 🧗</h1>
+
+        <form id="nedascore" oninput="
+            sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)
+        ">
+            <div class="run">
+                <p>Hva er persen din på mila?</p>
+                <div>
+                    <input type="number" id="minutter" value="40" min="26" max="100">
+                    <label for="minutter">Minutter</label>
+                </div>
+                <div>
+                    <input type="number" id="sekunder" value="30" min="0" max="60">
+                    <label for="sekunder">Sekunder</label>
+
+                </div>
             </div>
-            <div>
-                <label for="sekunder">Sekunder</label>
-                <input type="number" id="sekunder">
+
+            <div class="climb">
+                <p>Hva er din klatrepers?</p>
+
+                <select name="klatrepers" id="klatrepers">
+                    <option disabled>Fransk grad på led</option>
+                    <option value="5.0">5a</option>
+                    <option value="5.16">5a+</option>
+                    <option value="5.33">5b</option>
+                    <option value="5.5">5b+</option>
+                    <option value="5.66">5c</option>
+                    <option value="5.83">5c+</option>
+                    <option value="6.0" selected>6a</option>
+                    <option value="6.16">6a+</option>
+                    <option value="6.33">6b</option>
+                    <option value="6.5">6b+</option>
+                    <option value="6.66">6c</option>
+                    <option value="6.83">6c+</option>
+                    <option value="7.0">7a</option>
+                    <option value="7.16">7a+</option>
+                    <option value="7.33">7b</option>
+                    <option value="7.5">7b+</option>
+                    <option value="7.66">7c</option>
+                    <option value="7.83">7c+</option>
+                    <option value="8.0">8a</option>
+                    <option value="8.16">8a+</option>
+                    <option value="8.33">8b</option>
+                    <option value="8.5">8b+</option>
+                    <option value="8.66">8c</option>
+                    <option value="8.83">8c+</option>
+                    <option value="9.0">9a</option>
+                    <option value="9.16">9a+</option>
+                    <option value="9.33">9b</option>
+                    <option value="9.5">9b+</option>
+                    <option value="9.66">9c</option>
+                </select>
             </div>
-        </div>
-
-        <div>
-            <label for="klatrepers">Hva er din klatrepers?</label>
-
-            <select name="klatrepers" id="klatrepers">
-                <option disabled selected>Fransk grad på led</option>
-                <option value="5.0">5a</option>
-                <option value="5.16">5a+</option>
-                <option value="5.33">5b</option>
-                <option value="5.5">5b+</option>
-                <option value="5.66">5c</option>
-                <option value="5.83">5c+</option>
-                <option value="6.0">6a</option>
-                <option value="6.16">6a+</option>
-                <option value="6.33">6b</option>
-                <option value="6.5">6b+</option>
-                <option value="6.66">6c</option>
-                <option value="6.83">6c+</option>
-                <option value="7.0">7a</option>
-                <option value="7.16">7a+</option>
-                <option value="7.33">7b</option>
-                <option value="7.5">7b+</option>
-                <option value="7.66">7c</option>
-                <option value="7.83">7c+</option>
-                <option value="8.0">8a</option>
-                <option value="8.16">8a+</option>
-                <option value="8.33">8b</option>
-                <option value="8.5">8b+</option>
-                <option value="8.66">8c</option>
-                <option value="8.83">8c+</option>
-                <option value="9.0">9a</option>
-                <option value="9.16">9a+</option>
-                <option value="9.33">9b</option>
-                <option value="9.5">9b+</option>
-                <option value="9.66">9c</option>
-            </select>
-        </div>
-        <output name="sumresult" for="minutter sekunder klatrepers"></output>
-    </form>
-
-    <script>
-        
-    </script>
+            <output id="nedascore" name="sumresult" for="minutter sekunder klatrepers">7</output>
+        </form>
+    </main> 
 </body>
 </html>
