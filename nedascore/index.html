@@ -112,11 +112,12 @@
         </header>
 
 
-        <form id="nedascore" onchange="sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)">
+        <form id="nedascore" onchange="sumresult.value = (parseInt(minutter.value) + (parseInt(sekunder.value)/60)) / parseInt(klatrepers.value)">
+
             <div class="run">
                 <p>Hva er persen din på mila?</p>
                 <div>
-                    <input type="number" id="minutter" value="40" min="26" max="100" required>
+                    <input type="number" id="minutter" value="40" min="25" max="120" required>
                     <label for="minutter">Minutter</label>
                 </div>
                 <div>
