@@ -13,15 +13,22 @@
             padding: 0;
             margin: 0;
         }
-        main {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
+
         body {
             background-color: #fffffe;
             color: #141414;
             font-family: 'Source Code Pro', monospace;
+            display: grid;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        main {
+            max-width: 600px;
+            text-align: center;
+            display: inline-block;
+            margin: 2rem 0 0 0;
         }
 
         label {
@@ -72,10 +79,19 @@
             letter-spacing: .25rem;
         }
 
+        footer {
+            font-size: .65rem;
+            text-align: center;
+            opacity: .85;
+            display: inline-block;
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
     <main>
+
         <h1>🏃/🧗=🔥</h1>
 
         <form id="nedascore" onchange="sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)">
@@ -132,5 +148,9 @@
             <output id="nedascore" name="sumresult" for="minutter sekunder klatrepers">7</output>
         </form>
     </main> 
+    <footer>
+        <p>Inspirert av <a href="https://www.instagram.com/p/CaJ1_hON0uA/">dette Instagram-innlegget</a>.</p>
+        <p>Sjekk <a href="https://github.com/hanserino/hanskristiansmedsrod/blob/master/nedascore/index.html#L81">kildekoden</a> for utregningsmodellen.</p>
+    </footer>
 </body>
 </html>
