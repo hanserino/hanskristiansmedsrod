@@ -20,26 +20,38 @@
         }
         body {
             background-color: #fffffe;
+            color: #141414;
             font-family: 'Source Code Pro', monospace;
         }
 
         label {
             display: block;
+            font-size: .75rem;
+            margin-top: .15rem;
         }
+
         form > div {
             margin: 2rem;
+            font-size: 0;
         }
+
+        form > div > div {
+            display: inline-block;
+        }
+
+        form p {
+            display: block;
+            font-size: 1rem;
+        }
+        input#minutter{
+            border-right: 0;
+        }
+
         input, select {
             padding: .25rem;
             font-size: 3rem;
             text-align: center;
-        }
-        .run {
-            
-        }
-
-        .run > div {
-            display: inline-block;
+            border: 1px solid rgba(0,0,0,.15);
         }
 
         select {
@@ -49,6 +61,7 @@
         output {
             display: block;
             font-size: 2rem;
+            margin: 3rem 0 0 0;
         }
 
         output::before {
@@ -56,13 +69,14 @@
         }
         h1 {
             font-size: 4rem;
+            letter-spacing: .25rem;
         }
 
     </style>
 </head>
 <body>
     <main>
-        <h1>🏃 / 🧗 = 🔥</h1>
+        <h1>🏃/🧗=🔥</h1>
 
         <form id="nedascore" oninput="
             sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)
@@ -82,39 +96,40 @@
 
             <div class="climb">
                 <p>Hva er din klatrepers?</p>
-
-                <select name="klatrepers" id="klatrepers">
-                    <option disabled>Fransk grad på led</option>
-                    <option value="5.0">5a</option>
-                    <option value="5.16">5a+</option>
-                    <option value="5.33">5b</option>
-                    <option value="5.5">5b+</option>
-                    <option value="5.66">5c</option>
-                    <option value="5.83">5c+</option>
-                    <option value="6.0" selected>6a</option>
-                    <option value="6.16">6a+</option>
-                    <option value="6.33">6b</option>
-                    <option value="6.5">6b+</option>
-                    <option value="6.66">6c</option>
-                    <option value="6.83">6c+</option>
-                    <option value="7.0">7a</option>
-                    <option value="7.16">7a+</option>
-                    <option value="7.33">7b</option>
-                    <option value="7.5">7b+</option>
-                    <option value="7.66">7c</option>
-                    <option value="7.83">7c+</option>
-                    <option value="8.0">8a</option>
-                    <option value="8.16">8a+</option>
-                    <option value="8.33">8b</option>
-                    <option value="8.5">8b+</option>
-                    <option value="8.66">8c</option>
-                    <option value="8.83">8c+</option>
-                    <option value="9.0">9a</option>
-                    <option value="9.16">9a+</option>
-                    <option value="9.33">9b</option>
-                    <option value="9.5">9b+</option>
-                    <option value="9.66">9c</option>
-                </select>
+                <div>
+                    <select name="klatrepers" id="klatrepers">
+                        <option disabled>Fransk grad på led</option>
+                        <option value="5.0">5a</option>
+                        <option value="5.16">5a+</option>
+                        <option value="5.33">5b</option>
+                        <option value="5.5">5b+</option>
+                        <option value="5.66">5c</option>
+                        <option value="5.83">5c+</option>
+                        <option value="6.0" selected>6a</option>
+                        <option value="6.16">6a+</option>
+                        <option value="6.33">6b</option>
+                        <option value="6.5">6b+</option>
+                        <option value="6.66">6c</option>
+                        <option value="6.83">6c+</option>
+                        <option value="7.0">7a</option>
+                        <option value="7.16">7a+</option>
+                        <option value="7.33">7b</option>
+                        <option value="7.5">7b+</option>
+                        <option value="7.66">7c</option>
+                        <option value="7.83">7c+</option>
+                        <option value="8.0">8a</option>
+                        <option value="8.16">8a+</option>
+                        <option value="8.33">8b</option>
+                        <option value="8.5">8b+</option>
+                        <option value="8.66">8c</option>
+                        <option value="8.83">8c+</option>
+                        <option value="9.0">9a</option>
+                        <option value="9.16">9a+</option>
+                        <option value="9.33">9b</option>
+                        <option value="9.5">9b+</option>
+                        <option value="9.66">9c</option>
+                    </select>
+                </div>
             </div>
             <output id="nedascore" name="sumresult" for="minutter sekunder klatrepers">7</output>
         </form>
