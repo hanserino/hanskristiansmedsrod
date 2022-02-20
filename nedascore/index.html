@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
-    <title>NEDA Score Kalkulator</title>
+    <title>Hva er din NEDA Score?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         html, body {
             padding: 0;
             margin: 0;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
         }
 
         body {
@@ -22,6 +29,7 @@
             justify-content: center;
             width: 100%;
             min-height: 100vh;
+            padding: 0 .5rem;
         }
 
         main {
@@ -85,13 +93,24 @@
             display: inline-block;
             width: 100%;
         }
-
+        .bold {
+            font-weight: 600;
+        }
+        em.bold {
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
     <main>
+        <header>
+            <h1>🏃/🧗=🔥</h1>
+            <p>Hvor allsidig er du? Mestrer du å løpe raskt og klatre hardt? Det er det ikke mange som gjør.
+            <em>NEDA Score</em> er et tall som kalkuleres basert på persen din på mila og persen din på led.
+            Det er ikke mange i Norge med en <em class="bold">NEDA Score på under 5</em>. <br>Er du en av de? Jo lavere NEDA Score jo bedre. 
+         </p>
+        </header>
 
-        <h1>🏃/🧗=🔥</h1>
 
         <form id="nedascore" onchange="sumresult.value = (parseInt(minutter.value) + (60/parseInt(sekunder.value))) / parseInt(klatrepers.value)">
             <div class="run">
