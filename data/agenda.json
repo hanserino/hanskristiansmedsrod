@@ -9,50 +9,42 @@
   },
   {
     "date": "09.04.2022",
-    "category": "Ultra trail",
+    "category": "Terrengultra",
     "distance": "60km",
     "gain": "2500m d+",
-    "description": "KRS Ultra, Kristiansand, Norge",
+    "description": "KRS Ultra 60km, Kristiansand",
     "url": "https://www.krsultra.no/"
   },
   {
     "date": "23.04.2022",
-    "category": "Road race",
+    "category": "Gateløp",
     "distance": "10km",
     "gain": "0",
-    "description": "Sentrumsløpet",
+    "description": "Sentrumsløpet 10km, Oslo",
     "url": "https://sentrumslopet.no/10-kilometer/"
   },
   {
     "date": "14.05.2022",
-    "category": "Road relay",
+    "category": "Gateløp",
     "distance": "10km",
     "gain": "400",
-    "description": "Holmenkollstafetten",
+    "description": "Holmenkollstafetten, Oslo",
     "url": "https://holmenkollstafetten.no/"
   },
   {
     "date": "02.07.2022",
-    "category": "Ultra Trail",
+    "category": "Terrengultra",
     "distance": "80km",
     "gain": "3290m d+",
-    "description": "QC Mega Trail, Québec, Canada",
+    "description": "QC Mega Trail 80km, Québec, Canada",
     "url": "https://ultratrailcanada.com/80km-an/"
   },
   {
-    "date": "",
-    "category": "FKT",
-    "distance": "50km",
-    "gain": "4000m D+",
-    "description": "Blåmann - Tromsdalstinden - Hamperokken",
-    "url": ""
-  },
-  {
     "date": "26.08.2022",
-    "category": "Race",
+    "category": "Terrengultra",
     "distance": "100km",
     "gain": "6100m D+",
-    "description": "CCC",
+    "description": "CCC, 100km, Courmayeur",
     "url": "https://utmbmontblanc.com/en/page/21/21.html"
   }
 ]
