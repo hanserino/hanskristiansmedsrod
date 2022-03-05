@@ -8,6 +8,38 @@
     "url": ""
   },
   {
+    "date": "09.04.2022",
+    "category": "Ultra trail",
+    "distance": "60km",
+    "gain": "2500m d+",
+    "description": "KRS Ultra, Kristiansand, Norge",
+    "url": "https://www.krsultra.no/"
+  },
+  {
+    "date": "23.04.2022",
+    "category": "Road race",
+    "distance": "10km",
+    "gain": "0",
+    "description": "Sentrumsløpet",
+    "url": "https://sentrumslopet.no/10-kilometer/"
+  },
+  {
+    "date": "14.05.2022",
+    "category": "Road relay",
+    "distance": "10km",
+    "gain": "400",
+    "description": "Holmenkollstafetten",
+    "url": "https://holmenkollstafetten.no/"
+  },
+  {
+    "date": "14.05.2022",
+    "category": "Ultra Trail",
+    "distance": "80km",
+    "gain": "3290m d+",
+    "description": "QC Mega Trail, Québec, Canada",
+    "url": "https://ultratrailcanada.com/80km-an/"
+  },
+  {
     "date": "15.07.2022",
     "category": "FKT",
     "distance": "50km",
