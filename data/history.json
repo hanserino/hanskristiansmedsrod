@@ -118,5 +118,11 @@
         "category": "Race",
         "location": "Chamonix, Frankrike",
         "description": "43. plass TDS, UTMB"
+    },
+    {
+        "date": "09.04.2022",
+        "category": "Race",
+        "location": "Kristiansand, Norge",
+        "description": "2. plass KRSUltra"
     }
 ]
