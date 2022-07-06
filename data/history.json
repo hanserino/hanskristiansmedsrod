@@ -130,5 +130,11 @@
         "category": "Race",
         "location": "Oslo, Norge",
         "description": "44. plass Sentrumsløpet 10km [34:12]"
+    },
+    {
+        "date": "02.07.2022",
+        "category": "Race",
+        "location": "Québec, Canada",
+        "description": "2. plass Québec Mega Trail 80km"
     }
 ]
