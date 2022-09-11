@@ -111,6 +111,30 @@
         "date": "12.06.2021",
         "category": "Race",
         "location": "Valdres, Norge",
-        "description": "4. plass Nøsen Hundreds"
+        "description": "4. plass Nøsen Hundreds 100km"
+    },
+    {
+        "date": "25.08.2021",
+        "category": "Race",
+        "location": "Chamonix, Frankrike",
+        "description": "43. plass TDS 145km, UTMB"
+    },
+    {
+        "date": "09.04.2022",
+        "category": "Race",
+        "location": "Kristiansand, Norge",
+        "description": "2. plass KRSUltra 60km"
+    },
+    {
+        "date": "23.04.2022",
+        "category": "Race",
+        "location": "Oslo, Norge",
+        "description": "44. plass Sentrumsløpet 10km [34:12]"
+    },
+    {
+        "date": "02.07.2022",
+        "category": "Race",
+        "location": "Québec, Canada",
+        "description": "2. plass Québec Mega Trail 80km"
     }
 ]

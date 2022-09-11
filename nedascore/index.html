@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Hva er din NEDA Score?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            background-color: #fffffe;
+            color: #141414;
+            font-family: 'Source Code Pro', monospace;
+            display: grid;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+            padding: 0 .5rem;
+        }
+
+        main {
+            max-width: 600px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+            font-size: .75rem;
+            margin-top: .15rem;
+        }
+
+        form > div {
+            margin: 2rem;
+            font-size: 0;
+        }
+
+        form > div > div {
+            display: inline-block;
+        }
+
+        form p {
+            display: block;
+            font-size: 1rem;
+        }
+        input#minutter{
+            border-right: 0;
+        }
+
+        input, select {
+            padding: .25rem;
+            font-size: 3rem;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,.15);
+        }
+
+        select {
+           width: 240px;
+        }
+
+        output {
+            display: block;
+            font-size: 2rem;
+            margin: 3rem 0 0 0;
+        }
+
+        output::before {
+            content: "NEDA Score: ";
+        }
+        h1 {
+            font-size: 4rem;
+            letter-spacing: .25rem;
+        }
+
+        footer {
+            font-size: .65rem;
+            text-align: center;
+            opacity: .85;
+            display: inline-block;
+            width: 100%;
+        }
+        .bold {
+            font-weight: 600;
+        }
+        em.bold {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>🏃/🧗=🔥</h1>
+            <p>Hvor allsidig er du? Mestrer du å løpe raskt og klatre hardt? Det er det ikke mange som gjør.
+            <em>NEDA Score</em> er et tall som kalkuleres basert på persen din på mila og persen din på led.
+            Det er ikke mange i Norge med en <em class="bold">NEDA Score på under 5</em>. <br>Er du en av de? Jo lavere NEDA Score jo bedre. 
+         </p>
+        </header>
+
+
+        <form id="nedascore" onchange="sumresult.value = (parseInt(minutter.value) + (parseInt(sekunder.value)/60)) / parseInt(klatrepers.value)">
+
+            <div class="run">
+                <p>Hva er persen din på mila?</p>
+                <div>
+                    <input type="number" id="minutter" value="40" min="25" max="120" required>
+                    <label for="minutter">Minutter</label>
+                </div>
+                <div>
+                    <input type="number" id="sekunder" value="30" min="0" max="60" required>
+                    <label for="sekunder">Sekunder</label>
+
+                </div>
+            </div>
+
+            <div class="climb">
+                <p>Hva er din klatrepers?</p>
+                <div>
+                    <select name="klatrepers" id="klatrepers" required>
+                        <option disabled>Fransk grad på led</option>
+                        <option value="5.0">5a</option>
+                        <option value="5.16">5a+</option>
+                        <option value="5.33">5b</option>
+                        <option value="5.5">5b+</option>
+                        <option value="5.66">5c</option>
+                        <option value="5.83">5c+</option>
+                        <option value="6.0" selected>6a</option>
+                        <option value="6.16">6a+</option>
+                        <option value="6.33">6b</option>
+                        <option value="6.5">6b+</option>
+                        <option value="6.66">6c</option>
+                        <option value="6.83">6c+</option>
+                        <option value="7.0">7a</option>
+                        <option value="7.16">7a+</option>
+                        <option value="7.33">7b</option>
+                        <option value="7.5">7b+</option>
+                        <option value="7.66">7c</option>
+                        <option value="7.83">7c+</option>
+                        <option value="8.0">8a</option>
+                        <option value="8.16">8a+</option>
+                        <option value="8.33">8b</option>
+                        <option value="8.5">8b+</option>
+                        <option value="8.66">8c</option>
+                        <option value="8.83">8c+</option>
+                        <option value="9.0">9a</option>
+                        <option value="9.16">9a+</option>
+                        <option value="9.33">9b</option>
+                        <option value="9.5">9b+</option>
+                        <option value="9.66">9c</option>
+                    </select>
+                </div>
+            </div>
+            <output id="nedascore" name="sumresult" for="minutter sekunder klatrepers">7</output>
+        </form>
+    </main> 
+    <footer>
+        <p>Inspirert av <a href="https://www.instagram.com/p/CaJ1_hON0uA/">dette Instagram-innlegget</a>.</p>
+        <p>Sjekk <a href="https://github.com/hanserino/hanskristiansmedsrod/blob/2681b2a6a7185472c6fda11a09b5b4e49dea4ea6/nedascore/index.html#L96">kildekoden</a> for utregningsmodellen.</p>
+    </footer>
+</body>
+</html>

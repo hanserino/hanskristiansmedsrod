@@ -1,18 +1,50 @@
 [
   {
-    "date": "12.06.2021",
-    "category": "Race",
-    "distance": "100km",
-    "gain": "3250m D+",
-    "description": "Nøsen Hundreds",
-    "url": "https://www.trailnordic.com/"
+    "date": "18.02.2022",
+    "category": "Treningsleir",
+    "distance": "",
+    "gain": "",
+    "description": "ASICS 2022 Kick-off @ Tenerife",
+    "url": ""
   },
   {
-    "date": "24.08.2021",
-    "category": "Race",
-    "distance": "145km",
-    "gain": "9100m D+",
-    "description": "TDS",
-    "url": "https://utmbmontblanc.com/en/page/22/tds"
+    "date": "09.04.2022",
+    "category": "Terrengultra",
+    "distance": "60km",
+    "gain": "2500m d+",
+    "description": "KRS Ultra 60km, Kristiansand",
+    "url": "https://www.krsultra.no/"
+  },
+  {
+    "date": "23.04.2022",
+    "category": "Gateløp",
+    "distance": "10km",
+    "gain": "0",
+    "description": "Sentrumsløpet 10km, Oslo",
+    "url": "https://sentrumslopet.no/10-kilometer/"
+  },
+  {
+    "date": "14.05.2022",
+    "category": "Gateløp",
+    "distance": "10km",
+    "gain": "400",
+    "description": "Holmenkollstafetten, Oslo",
+    "url": "https://holmenkollstafetten.no/"
+  },
+  {
+    "date": "02.07.2022",
+    "category": "Terrengultra",
+    "distance": "80km",
+    "gain": "3290m d+",
+    "description": "QC Mega Trail 80km, Québec, Canada",
+    "url": "https://ultratrailcanada.com/80km-an/"
+  },
+  {
+    "date": "26.08.2022",
+    "category": "Terrengultra",
+    "distance": "100km",
+    "gain": "6100m D+",
+    "description": "CCC, 100km, Courmayeur",
+    "url": "https://utmbmontblanc.com/en/page/21/21.html"
   }
 ]
