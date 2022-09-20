@@ -142,5 +142,11 @@
         "category": "Race",
         "location": "Chamonix, Frankrike",
         "description": "66. plass CCC 100km [13:12:26]"
+    },
+    {
+        "date": "18.09.2022",
+        "category": "Race",
+        "distance": "2km",
+        "description": "16. plass Nesaksla Opp [27:20]"
     }
 ]
