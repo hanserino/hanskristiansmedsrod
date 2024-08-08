@@ -168,10 +168,22 @@
         "description": "16. plass Tromsø Skyrace Tromsdalstind [03:32:00]"
     },
     {
+        "date": "02.09.2023",
+        "category": "Race",
+        "distance": "28km",
+        "description": "16. plass Tromsø Skyrace Tromsdalstind [03:32:00]"
+    },
+    {
+        "date": "03.11.2023",
+        "category": "Race",
+        "distance": "8.6 km",
+        "description": "21. plass Romsdalseggenløpet [01:16:02]"
+    },
+    {
         "date": "03.11.2023",
         "category": "Race",
         "distance": "160 km",
-        "description": "DNF Kullamannen 100 Miles"
+        "description": "DNS Kullamannen 100 Miles"
     },
     {
         "date": "13.07.2024",
