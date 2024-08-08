@@ -148,5 +148,29 @@
         "category": "Race",
         "distance": "2km",
         "description": "16. plass Nesaksla Opp [27:20]"
+    },
+    {
+        "date": "24.06.2023",
+        "category": "Race",
+        "distance": "23km",
+        "description": "21. plass Isfjorden Skyrace [03:19:05]"
+    },
+    {
+        "date": "05.08.2023",
+        "category": "Race",
+        "distance": "28km",
+        "description": "16. plass Tromsø Skyrace Tromsdalstind [03:32:00]"
+    },
+    {
+        "date": "03.11.2023",
+        "category": "Race",
+        "distance": "160 km",
+        "description": "DNF Kullamannen 100 Miles"
+    },
+    {
+        "date": "13.07.2024",
+        "category": "Race",
+        "distance": "30 km",
+        "description": "13. plass Black Lake Race [05:10:05]"
     }
 ]
