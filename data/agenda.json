@@ -22,5 +22,13 @@
         "gain": "6600",
         "description": "Wildstrubel by UTMB 110",
         "url": "https://wildstrubel.utmb.world/"
+    },
+    {
+        "date": "xx.10.2024",
+        "category": "FKT",
+        "distance": "100",
+        "gain": "6000",
+        "description": "Romsdal Ultra Trail course FKT",
+        "url": ""
     }
 ]
