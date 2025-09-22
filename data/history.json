@@ -204,9 +204,15 @@
         "description": "333. plass Wildstrubel by UTMB 110K [11:59:55]"
     },
     {
-        "date": "06.09.2024",
+        "date": "06.09.2025",
         "category": "Race",
         "distance": "28 km",
         "description": "6. plass Romsdalseggenløpet Fjord To Summit [04:01:00]"
+    },
+    {
+        "date": "20.09.2025",
+        "category": "Race",
+        "distance": "56 km",
+        "description": "15. plass Fýri Trail Ultra"
     }
 ]
