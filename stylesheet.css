@@ -45,52 +45,38 @@ img{
         display: none;
     }
 }
+:root{
+    --ink: #1a1a1a;
+    --paper: #f4f1eb;
+    --row: #e7e2d8;
+    --row-hover: #ddd6c8;
+}
+
 body{
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
+    font-family: "Schibsted Grotesk", sans-serif;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--paper);
 }
 
 h1, h2 {
-    font-family: 'Bangers', cursive;
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
 }
 h1{
-    font-size: 4.5rem;
+    font-size: 3.4rem;
 }
 @media (max-width: 650px){
     h1{
-        font-size: 3.5rem;
+        font-size: 2.75rem;
     } 
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0 0 .75rem 0;
-}
-
-.lang-link{
-    position: absolute;
-    bottom: 2.5rem;
-    line-height: 1.2;
-    height: 1.2rem;
-    font-size: 1rem;
-    transform: translate(1rem, 0);
-    z-index: 4;
-    color: white;
-    opacity: 0;
-    background: rgba(0,0,0,.4);
-    transition: 1s opacity linear 2.5s;
-}
-
-@media (min-width: 650px){
-    .lang-link{
-        top: 1rem;
-        right: 1rem;
-        transform: translate(0, 0);
-    } 
-}
-
-.loaded.no-touch .lang-link{
-    opacity: 1;
 }
 
 .header {
@@ -205,6 +191,8 @@ h2{
 }
 .box{
     flex: 0 0 100%;
+    min-width: 0;
+    max-width: 100%;
     border: 0px solid #333;
     border-width: 2px 0;
     position: relative;
@@ -238,11 +226,35 @@ h2{
     text-decoration: none;
 }
 
+.box.text blockquote{
+    margin: 1.25rem 0;
+    padding: 0 0 0 1rem;
+    border-left: 2px solid #333;
+}
+.box.text blockquote p{
+    margin: 0;
+    font-style: italic;
+}
+.box.text blockquote p + p{
+    margin-top: .35rem;
+    font-size: .85em;
+    font-style: normal;
+}
+.box.text blockquote a{
+    color: inherit;
+}
+.box.text blockquote a:hover{
+    background: #333;
+    color: white;
+}
+
 .box.pic {
     overflow: hidden;
 }
 .box.pic img{
     display: block;
+    width: 100%;
+    height: auto;
     transform: scale(1) translate(0,0);
     transition: 1s all ease-out 0s;
 }
@@ -274,7 +286,8 @@ h2{
     opacity: 1;
 }
 
-.touch.pic figcaption{
+body.touch .box.pic figcaption,
+.box.pic:focus-within figcaption{
     opacity: 1;
 }
 
@@ -343,6 +356,17 @@ h2{
     background: url('./media/loader.gif') no-repeat center center;
 }
 
+#historikk{
+    overflow-x: auto;
+}
+
+#history-table th:nth-child(1),
+#history-table td:nth-child(1),
+#history-table th:nth-child(3),
+#history-table td:nth-child(3){
+    white-space: nowrap;
+}
+
 table{
     border-collapse: collapse;
     width: 100%;
@@ -357,9 +381,11 @@ table td, table th {
     padding: .25rem .4rem;
 }
 
-table tr:nth-child(even){background-color: #f7f7f7;}
+table tr{background-color: var(--paper);}
 
-table tr:hover {background-color: #e6e6e6;}
+table tr:nth-child(even){background-color: var(--row);}
+
+table tr:hover {background-color: var(--row-hover);}
 
 table thead th{
     position: sticky;
@@ -367,9 +393,9 @@ table thead th{
 }
 table th {
     text-align: left;
-    background-color: yellow;
-    color: #333333;
-    font-weight: bold;
+    background-color: var(--ink);
+    color: var(--paper);
+    font-weight: 600;
 }
 
 ul.spons-list{
@@ -448,7 +474,7 @@ ul.spons-list{
 }
 
 
-footer{
+body > footer{
     background: #333;
     text-align: center;
     color: rgba(255,255,255,.75);
@@ -456,12 +482,12 @@ footer{
     font-size: .75rem;
 }
 
-footer a {
+body > footer a {
     color: inherit;
     text-decoration: underline;
 }
 
-footer a:hover {
+body > footer a:hover {
     color: white;
 }
 
