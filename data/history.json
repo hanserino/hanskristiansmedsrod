@@ -232,5 +232,11 @@
         "category": "Race",
         "distance": "17 km",
         "description": "4. plass Kløvstien Open [01:29:32]"
+    },
+    {
+        "date": "30.11.2026",
+        "category": "Race",
+        "distance": "100 Miles",
+        "description": "DNF"
     }
 ]
